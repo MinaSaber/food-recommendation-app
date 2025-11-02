@@ -7,13 +7,15 @@ CREATE TYPE "EventType" AS ENUM ('view', 'click', 'like', 'order', 'rate');
 -- CreateTable
 CREATE TABLE "users" (
     "id" SERIAL NOT NULL,
-    "name" VARCHAR(255) NOT NULL,
-    "email" TEXT NOT NULL,
-    "password" VARCHAR(255) NOT NULL,
+    "name" VARCHAR(255),
+    "email" TEXT,
+    "password" VARCHAR(255),
     "age" INTEGER,
     "gender" "Gender" NOT NULL,
     "budget_preference" TEXT NOT NULL,
     "dietary_preferences" JSONB NOT NULL,
+    "otp" VARCHAR(6) NOT NULL,
+    "phone_number" VARCHAR(20) NOT NULL,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL,
 
@@ -121,6 +123,9 @@ CREATE TABLE "admin_actions" (
 
 -- CreateIndex
 CREATE UNIQUE INDEX "users_email_key" ON "users"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "users_phone_number_key" ON "users"("phone_number");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "admins_email_key" ON "admins"("email");

@@ -21,13 +21,15 @@ datasource db {
 /// singular while mapping to the plural table name.
 model User {
   id                    Int      @id @default(autoincrement())
-  name                  String   @db.VarChar(255) // Using a standard length for varchar
-  email                 String   @unique
-  password              String   @db.VarChar(255)
+  name                  String?   @db.VarChar(255) // Using a standard length for varchar
+  email                 String?   @unique
+  password              String?   @db.VarChar(255)
   age                   Int?     // Made nullable in case age is optional
   gender                Gender   
   budgetPreference      String   @map("budget_preference") // e.g. “low”, “medium”, “high”
-  dietaryPreferences    Json     @map("dietary_preferences") // PostgreSQL's json type
+  dietaryPreferences    Json     @map("dietary_preferences")
+  otp                   String   @db.VarChar(6)
+  phoneNumber           String   @db.VarChar(20) @unique @map("phone_number")
   createdAt             DateTime @default(now()) @map("created_at")
   updatedAt             DateTime @updatedAt @map("updated_at")
 
