@@ -22,22 +22,34 @@ datasource db {
 model User {
   id                    Int      @id @default(autoincrement())
   name                  String?   @db.VarChar(255) // Using a standard length for varchar
-  email                 String?   @unique
-  password              String?   @db.VarChar(255)
-  age                   Int?     // Made nullable in case age is optional
-  gender                Gender   
-  budgetPreference      String   @map("budget_preference") // e.g. “low”, “medium”, “high”
-  dietaryPreferences    Json     @map("dietary_preferences")
-  otp                   String   @db.VarChar(6)
   phoneNumber           String   @db.VarChar(20) @unique @map("phone_number")
+  age                   Int?     // Made nullable in case age is optional
+  gender                Gender?   
+  budgetPreference      String?   @map("budget_preference") // e.g. “low”, “medium”, “high”
+  dietaryPreferences    Json?     @map("dietary_preferences")
   createdAt             DateTime @default(now()) @map("created_at")
   updatedAt             DateTime @updatedAt @map("updated_at")
 
   // Relations
   events                Event[]
   reviews               Review[]
+  userSessions          UserSession[]
 
   @@map("users")
+}
+
+model UserSession {
+  id                    Int      @id @default(autoincrement())
+  userId                Int      @map("user_id")
+  token                 String   @db.VarChar(255)
+  expiresAt             DateTime @map("expires_at")
+  createdAt             DateTime @default(now()) @map("created_at")
+  updatedAt             DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_sessions")
 }
 
 model Restaurant {
@@ -172,9 +184,10 @@ enum Gender {
 }
 
 enum EventType {
-  view
-  click
-  like
-  order
-  rate
+  view // 0.1
+  click // 0.4
+  like // 0.6
+  share // 0.8
+  order // 1.0
+  rate 
 }

@@ -8,18 +8,29 @@ CREATE TYPE "EventType" AS ENUM ('view', 'click', 'like', 'order', 'rate');
 CREATE TABLE "users" (
     "id" SERIAL NOT NULL,
     "name" VARCHAR(255),
+    "phone_number" VARCHAR(20) NOT NULL,
     "email" TEXT,
     "password" VARCHAR(255),
     "age" INTEGER,
-    "gender" "Gender" NOT NULL,
-    "budget_preference" TEXT NOT NULL,
-    "dietary_preferences" JSONB NOT NULL,
-    "otp" VARCHAR(6) NOT NULL,
-    "phone_number" VARCHAR(20) NOT NULL,
+    "gender" "Gender",
+    "budget_preference" TEXT,
+    "dietary_preferences" JSONB,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL,
 
     CONSTRAINT "users_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "user_sessions" (
+    "id" SERIAL NOT NULL,
+    "user_id" INTEGER NOT NULL,
+    "token" VARCHAR(255) NOT NULL,
+    "expires_at" TIMESTAMP(3) NOT NULL,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "user_sessions_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
@@ -122,16 +133,19 @@ CREATE TABLE "admin_actions" (
 );
 
 -- CreateIndex
-CREATE UNIQUE INDEX "users_email_key" ON "users"("email");
+CREATE UNIQUE INDEX "users_phone_number_key" ON "users"("phone_number");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "users_phone_number_key" ON "users"("phone_number");
+CREATE UNIQUE INDEX "users_email_key" ON "users"("email");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "admins_email_key" ON "admins"("email");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "roles_name_key" ON "roles"("name");
+
+-- AddForeignKey
+ALTER TABLE "user_sessions" ADD CONSTRAINT "user_sessions_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "users"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "food_items" ADD CONSTRAINT "food_items_restaurant_id_fkey" FOREIGN KEY ("restaurant_id") REFERENCES "restaurants"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
