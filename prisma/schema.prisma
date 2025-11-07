@@ -100,7 +100,7 @@ model Event {
   userId         Int      @map("user_id")
   itemId         Int      @map("item_id")
   eventType      EventType @map("event_type")
-  value          Float?   // Float can be represented by Float in Prisma
+  value          Decimal    @db.Decimal
   createdAt      DateTime @default(now()) @map("created_at")
 
   // Relations
@@ -184,10 +184,10 @@ enum Gender {
 }
 
 enum EventType {
-  view // 0.1
-  click // 0.4
-  like // 0.6
-  share // 0.8
-  order // 1.0
+  view
+  click
+  like
+  share
+  order
   rate 
 }
