@@ -8,8 +8,8 @@ import { Reflector } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
 import { Request } from 'express';
 import * as jwt from 'jsonwebtoken';
-import { IS_PUBLIC_KEY } from '../decorators/public.decorator';
-import { CurrentUserPayload } from '../decorators/current-user.decorator';
+import { IS_PUBLIC_KEY } from '../../shared/decorators/public.decorator';
+import { CurrentUserPayload } from '../../shared/decorators/current-user.decorator';
 
 @Injectable()
 export class JwtGuard implements CanActivate {

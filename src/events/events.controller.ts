@@ -4,7 +4,7 @@ import { Body, Controller, Post } from '@nestjs/common';
 import {
   CurrentUser,
   CurrentUserPayload,
-} from '../auth/decorators/current-user.decorator';
+} from '../shared/decorators/current-user.decorator';
 
 @Controller('events')
 export class EventsController {

@@ -7,8 +7,9 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { PrismaModule } from './prsima/prisma.module';
 import { EventsModule } from './events/events.module';
-import { JwtGuard } from './auth/guards/jwt.guard';
 import { RecommendationsModule } from './recommendations/recommendations.module';
+import { JwtGuard } from './shared/guards/jwt.guard';
+import { RestaurantsModule } from './restaurants/restaurants.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { RecommendationsModule } from './recommendations/recommendations.module'
     AuthModule,
     EventsModule,
     RecommendationsModule,
+    RestaurantsModule,
   ],
   controllers: [AppController],
   providers: [

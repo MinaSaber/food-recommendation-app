@@ -1,6 +1,6 @@
 import { RecommendationsService } from './recommendations.service';
 import { Controller, Post } from '@nestjs/common';
-import { Public } from '@/auth/decorators/public.decorator';
+import { Public } from '@/shared/decorators/public.decorator';
 
 @Controller('recommendations')
 export class RecommendationsController {
