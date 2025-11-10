@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { PrismaModule } from './prsima/prisma.module';
 import { EventsModule } from './events/events.module';
 import { JwtGuard } from './auth/guards/jwt.guard';
+import { RecommendationsModule } from './recommendations/recommendations.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { JwtGuard } from './auth/guards/jwt.guard';
     UsersModule,
     AuthModule,
     EventsModule,
+    RecommendationsModule,
   ],
   controllers: [AppController],
   providers: [
