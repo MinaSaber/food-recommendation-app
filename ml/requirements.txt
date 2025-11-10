@@ -1,0 +1,7 @@
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+rectools-lightfm>=1.17
+# Note: rectools-lightfm is a compatible alternative to lightfm
+# It provides the same API and works with Python 3.11+
+
