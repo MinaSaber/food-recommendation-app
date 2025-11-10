@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { RestaurantsService } from './restaurants.service';
 import { Public } from '../shared/decorators/public.decorator';
 
@@ -10,5 +10,11 @@ export class RestaurantsController {
   @Get()
   async getRestaurants() {
     return this.restaurantsService.getRestaurants();
+  }
+
+  @Public()
+  @Get(':id/food-items')
+  async getFoodItemsForRestaurant(@Param('id') id: number) {
+    return this.restaurantsService.getFoodItemsForRestaurant(id);
   }
 }
