@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "phone_number": "+12345678901",
+    "age": 28,
+    "gender": "male",
+    "budget_preference": "medium",
+    "dietary_preferences": ["gluten-free", "dairy-free"]
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "phone_number": "+12345678902",
+    "age": 32,
+    "gender": "female",
+    "budget_preference": "high",
+    "dietary_preferences": ["vegetarian", "organic"]
+  },
+  {
+    "id": 3,
+    "name": "Mike Chen",
+    "phone_number": "+12345678903",
+    "age": 25,
+    "gender": "male",
+    "budget_preference": "low",
+    "dietary_preferences": ["vegan", "soy-free"]
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "phone_number": "+12345678904",
+    "age": 29,
+    "gender": "female",
+    "budget_preference": "medium",
+    "dietary_preferences": ["pescatarian", "low-carb"]
+  },
+  {
+    "id": 5,
+    "name": "David Wilson",
+    "phone_number": "+12345678905",
+    "age": 45,
+    "gender": "male",
+    "budget_preference": "high",
+    "dietary_preferences": ["keto", "paleo"]
+  },
+  {
+    "id": 6,
+    "name": "Lisa Brown",
+    "phone_number": "+12345678906",
+    "age": 35,
+    "gender": "female",
+    "budget_preference": "medium",
+    "dietary_preferences": ["gluten-free", "nut-free"]
+  },
+  {
+    "id": 7,
+    "name": "Robert Taylor",
+    "phone_number": "+12345678907",
+    "age": 52,
+    "gender": "male",
+    "budget_preference": "low",
+    "dietary_preferences": ["diabetic", "low-sodium"]
+  },
+  {
+    "id": 8,
+    "name": "Maria Garcia",
+    "phone_number": "+12345678908",
+    "age": 31,
+    "gender": "female",
+    "budget_preference": "high",
+    "dietary_preferences": ["mediterranean", "vegetarian"]
+  },
+  {
+    "id": 9,
+    "name": "James Miller",
+    "phone_number": "+12345678909",
+    "age": 27,
+    "gender": "male",
+    "budget_preference": "medium",
+    "dietary_preferences": ["halal", "spicy"]
+  },
+  {
+    "id": 10,
+    "name": "Jennifer Lee",
+    "phone_number": "+12345678910",
+    "age": 38,
+    "gender": "female",
+    "budget_preference": "low",
+    "dietary_preferences": ["kosher", "vegan"]
+  },
+  {
+    "id": 11,
+    "name": "Thomas Anderson",
+    "phone_number": "+12345678911",
+    "age": 41,
+    "gender": "male",
+    "budget_preference": "high",
+    "dietary_preferences": ["low-fat", "high-protein"]
+  },
+  {
+    "id": 12,
+    "name": "Amanda White",
+    "phone_number": "+12345678912",
+    "age": 33,
+    "gender": "female",
+    "budget_preference": "medium",
+    "dietary_preferences": ["dairy-free", "egg-free"]
+  },
+  {
+    "id": 13,
+    "name": "Kevin Martinez",
+    "phone_number": "+12345678913",
+    "age": 26,
+    "gender": "male",
+    "budget_preference": "low",
+    "dietary_preferences": ["vegetarian", "gluten-free"]
+  },
+  {
+    "id": 14,
+    "name": "Rachel Green",
+    "phone_number": "+12345678914",
+    "age": 30,
+    "gender": "female",
+    "budget_preference": "high",
+    "dietary_preferences": ["pescatarian", "organic"]
+  },
+  {
+    "id": 15,
+    "name": "Daniel Kim",
+    "phone_number": "+12345678915",
+    "age": 36,
+    "gender": "male",
+    "budget_preference": "medium",
+    "dietary_preferences": ["keto", "dairy-free"]
+  },
+  {
+    "id": 16,
+    "name": "Michelle Rodriguez",
+    "phone_number": "+12345678916",
+    "age": 29,
+    "gender": "female",
+    "budget_preference": "low",
+    "dietary_preferences": ["vegan", "soy-free"]
+  },
+  {
+    "id": 17,
+    "name": "Christopher Lee",
+    "phone_number": "+12345678917",
+    "age": 44,
+    "gender": "male",
+    "budget_preference": "high",
+    "dietary_preferences": ["paleo", "low-carb"]
+  },
+  {
+    "id": 18,
+    "name": "Stephanie Wong",
+    "phone_number": "+12345678918",
+    "age": 31,
+    "gender": "female",
+    "budget_preference": "medium",
+    "dietary_preferences": ["gluten-free", "nut-free"]
+  },
+  {
+    "id": 19,
+    "name": "Matthew Harris",
+    "phone_number": "+12345678919",
+    "age": 28,
+    "gender": "male",
+    "budget_preference": "low",
+    "dietary_preferences": ["vegetarian", "organic"]
+  },
+  {
+    "id": 20,
+    "name": "Jessica Chen",
+    "phone_number": "+12345678920",
+    "age": 35,
+    "gender": "female",
+    "budget_preference": "high",
+    "dietary_preferences": ["keto", "dairy-free"]
+  }
+]
+
