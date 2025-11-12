@@ -7,16 +7,12 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { PrismaModule } from './prsima/prisma.module';
 import { EventsModule } from './events/events.module';
-<<<<<<< HEAD
-import { JwtGuard } from './auth/guards/jwt.guard';
 import { AreasModule } from './areas/areas.module';
 import { VendorsModule } from './vendors/vendors.module';
 import { TalModule } from './external/providers/tal/tal.module';
-=======
 import { RecommendationsModule } from './recommendations/recommendations.module';
 import { JwtGuard } from './shared/guards/jwt.guard';
 import { RestaurantsModule } from './restaurants/restaurants.module';
->>>>>>> main
 
 @Module({
   imports: [
@@ -28,14 +24,11 @@ import { RestaurantsModule } from './restaurants/restaurants.module';
     UsersModule,
     AuthModule,
     EventsModule,
-<<<<<<< HEAD
     TalModule,
     AreasModule,
     VendorsModule,
-=======
     RecommendationsModule,
     RestaurantsModule,
->>>>>>> main
   ],
   controllers: [AppController],
   providers: [

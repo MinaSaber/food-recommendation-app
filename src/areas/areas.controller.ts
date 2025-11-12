@@ -1,14 +1,14 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { AreasService } from './areas.service';
-import { Public } from '@/auth/decorators/public.decorator';
+import { Public } from '@/shared/decorators/public.decorator';
 
 @Controller('areas')
 export class AreasController {
   constructor(private readonly areasService: AreasService) {}
 
-  @Public()  
+  @Public()
   @Get()
-  getAreas(@Query('countryId') countryId?: number) {
-    return this.areasService.getAreas(countryId);
+  getAreas() {
+    return this.areasService.getAreas();
   }
 }

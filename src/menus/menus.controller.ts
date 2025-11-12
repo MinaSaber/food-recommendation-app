@@ -1,6 +1,6 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
 import { MenusService } from './menus.service';
-import { Public } from '@/auth/decorators/public.decorator';
+import { Public } from '@/shared/decorators/public.decorator';
 
 @Controller('menus')
 export class MenusController {
