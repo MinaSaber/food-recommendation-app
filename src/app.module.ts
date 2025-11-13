@@ -11,6 +11,7 @@ import { JwtGuard } from './auth/guards/jwt.guard';
 import { AreasModule } from './areas/areas.module';
 import { VendorsModule } from './vendors/vendors.module';
 import { TalModule } from './external/providers/tal/tal.module';
+import { MenusModule } from './menus/menus.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { TalModule } from './external/providers/tal/tal.module';
     TalModule,
     AreasModule,
     VendorsModule,
+    MenusModule
   ],
   controllers: [AppController],
   providers: [
