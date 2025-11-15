@@ -18,9 +18,9 @@ export class RestaurantsController {
     return this.restaurantsService.getTalVendors(areaSlug);
   }
 
-  @Public()
-  @Get(':id/food-items')
-  async getFoodItemsForRestaurant(@Param('id') id: number) {
-    return this.restaurantsService.getFoodItemsForRestaurant(id);
-  }
+  // @Public()
+  // @Get(':id/food-items')
+  // async getFoodItemsForRestaurant(@Param('id') id: number) {
+  //   return this.restaurantsService.getFoodItemsForRestaurant(id);
+  // }
 }

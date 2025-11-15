@@ -29,4 +29,18 @@ export class RestaurantsRepository {
       },
     });
   }
+
+  async getRestaurantByNameAndLocation(
+    name: string,
+    longitude: number,
+    latitude: number,
+  ) {
+    return this.prisma.restaurant.findFirst({
+      where: {
+        name,
+        latitude,
+        longitude,
+      },
+    });
+  }
 }

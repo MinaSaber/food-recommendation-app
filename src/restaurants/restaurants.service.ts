@@ -31,7 +31,6 @@ export class RestaurantsService {
 
   constructor(
     private readonly restaurantsRepository: RestaurantsRepository,
-    private readonly foodItemsService: FoodItemsService,
     private readonly talservice: TalService,
     private readonly areasService: AreasService,
   ) {}
@@ -40,14 +39,25 @@ export class RestaurantsService {
     return this.restaurantsRepository.getRestaurants();
   }
 
-  async getFoodItemsForRestaurant(restaurantId: number) {
-    const restaurant =
-      await this.restaurantsRepository.getRestaurantById(restaurantId);
-    if (!restaurant) {
-      throw new NotFoundException('Restaurant not found');
-    }
+  async getRestaurantByNameAndLocation(
+    name: string,
+    longitude: number,
+    latitude: number,
+  ) {
+    return this.restaurantsRepository.getRestaurantByNameAndLocation(
+      name,
+      longitude,
+      latitude,
+    );
+  }
 
-    return this.foodItemsService.getFoodItemsForRestaurant(restaurant.id);
+  async getFoodItemsForRestaurant(restaurantId: number) {
+    // const restaurant =
+    //   await this.restaurantsRepository.getRestaurantById(restaurantId);
+    // if (!restaurant) {
+    //   throw new NotFoundException('Restaurant not found');
+    // }
+    // return this.foodItemsService.getFoodItemsForRestaurant(restaurant.id);
   }
 
   async getTalVendors(areaSlug: string) {
@@ -72,7 +82,7 @@ export class RestaurantsService {
     }
 
     const existingRestaurants =
-      await this.restaurantsRepository.getRestaurantsByArea(talAreaId);
+      await this.restaurantsRepository.getRestaurantsByArea(area.id);
 
     const existingSet = new Set(
       existingRestaurants.map(
