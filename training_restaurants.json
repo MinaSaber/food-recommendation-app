@@ -1,0 +1,223 @@
+[
+  {
+    "id": 1,
+    "name": "The Golden Dragon",
+    "description": "Authentic Chinese cuisine with modern twists",
+    "phone": "+19876543210",
+    "address": "123 Main Street, Downtown",
+    "latitude": 40.7128,
+    "longitude": -74.0060,
+    "avg_price": 25.00,
+    "avg_price_level": 2,
+    "rating": 4.5,
+    "opening_hours": {
+      "monday": "11:00-22:00",
+      "tuesday": "11:00-22:00",
+      "wednesday": "11:00-22:00",
+      "thursday": "11:00-23:00",
+      "friday": "11:00-23:00",
+      "saturday": "12:00-23:00",
+      "sunday": "12:00-21:00"
+    },
+    "website": "https://goldendragon.com"
+  },
+  {
+    "id": 2,
+    "name": "Mama Mia Italian",
+    "description": "Traditional Italian dishes in a cozy atmosphere",
+    "phone": "+19876543211",
+    "address": "456 Oak Avenue, Little Italy",
+    "latitude": 40.7215,
+    "longitude": -74.0052,
+    "avg_price": 35.00,
+    "avg_price_level": 2,
+    "rating": 4.3,
+    "opening_hours": {
+      "monday": "17:00-22:00",
+      "tuesday": "17:00-22:00",
+      "wednesday": "17:00-22:00",
+      "thursday": "17:00-23:00",
+      "friday": "17:00-23:00",
+      "saturday": "16:00-23:00",
+      "sunday": "16:00-21:00"
+    },
+    "website": "https://mamamiaitalian.com"
+  },
+  {
+    "id": 3,
+    "name": "Burger Palace",
+    "description": "Gourmet burgers and craft beers",
+    "phone": "+19876543212",
+    "address": "789 Burger Lane, Food District",
+    "latitude": 40.7056,
+    "longitude": -74.0134,
+    "avg_price": 18.00,
+    "avg_price_level": 1,
+    "rating": 4.2,
+    "opening_hours": {
+      "monday": "11:00-23:00",
+      "tuesday": "11:00-23:00",
+      "wednesday": "11:00-23:00",
+      "thursday": "11:00-00:00",
+      "friday": "11:00-01:00",
+      "saturday": "11:00-01:00",
+      "sunday": "11:00-22:00"
+    },
+    "website": "https://burgerpalace.com"
+  },
+  {
+    "id": 4,
+    "name": "Sushi Zen",
+    "description": "Japanese sushi and sashimi excellence",
+    "phone": "+19876543213",
+    "address": "321 Fish Market, Harbor Front",
+    "latitude": 40.7032,
+    "longitude": -74.0170,
+    "avg_price": 45.00,
+    "avg_price_level": 3,
+    "rating": 4.7,
+    "opening_hours": {
+      "monday": "12:00-22:00",
+      "tuesday": "12:00-22:00",
+      "wednesday": "12:00-22:00",
+      "thursday": "12:00-23:00",
+      "friday": "12:00-23:00",
+      "saturday": "12:00-23:00",
+      "sunday": "12:00-21:00"
+    },
+    "website": "https://sushizen.com"
+  },
+  {
+    "id": 5,
+    "name": "Green Leaf Cafe",
+    "description": "Healthy vegetarian and vegan options",
+    "phone": "+19876543214",
+    "address": "654 Health Blvd, Wellness District",
+    "latitude": 40.7289,
+    "longitude": -74.0078,
+    "avg_price": 22.00,
+    "avg_price_level": 2,
+    "rating": 4.4,
+    "opening_hours": {
+      "monday": "08:00-21:00",
+      "tuesday": "08:00-21:00",
+      "wednesday": "08:00-21:00",
+      "thursday": "08:00-21:00",
+      "friday": "08:00-22:00",
+      "saturday": "09:00-22:00",
+      "sunday": "09:00-20:00"
+    },
+    "website": "https://greenleafcafe.com"
+  },
+  {
+    "id": 6,
+    "name": "El Fuego Mexican",
+    "description": "Spicy Mexican cuisine with fresh ingredients",
+    "phone": "+19876543215",
+    "address": "987 Spice Road, Latin Quarter",
+    "latitude": 40.7183,
+    "longitude": -74.0096,
+    "avg_price": 20.00,
+    "avg_price_level": 1,
+    "rating": 4.1,
+    "opening_hours": {
+      "monday": "16:00-23:00",
+      "tuesday": "16:00-23:00",
+      "wednesday": "16:00-23:00",
+      "thursday": "16:00-00:00",
+      "friday": "16:00-01:00",
+      "saturday": "12:00-01:00",
+      "sunday": "12:00-22:00"
+    },
+    "website": "https://elfuegomexican.com"
+  },
+  {
+    "id": 7,
+    "name": "Steak House Prime",
+    "description": "Premium steaks and fine wines",
+    "phone": "+19876543216",
+    "address": "555 Meat Street, Financial District",
+    "latitude": 40.7074,
+    "longitude": -74.0112,
+    "avg_price": 65.00,
+    "avg_price_level": 3,
+    "rating": 4.6,
+    "opening_hours": {
+      "monday": "17:00-23:00",
+      "tuesday": "17:00-23:00",
+      "wednesday": "17:00-23:00",
+      "thursday": "17:00-00:00",
+      "friday": "17:00-00:00",
+      "saturday": "17:00-00:00",
+      "sunday": "17:00-22:00"
+    },
+    "website": "https://steakhouseprime.com"
+  },
+  {
+    "id": 8,
+    "name": "Mediterranean Breeze",
+    "description": "Fresh Mediterranean and Greek dishes",
+    "phone": "+19876543217",
+    "address": "222 Olive Lane, Cultural District",
+    "latitude": 40.7321,
+    "longitude": -74.0024,
+    "avg_price": 28.00,
+    "avg_price_level": 2,
+    "rating": 4.3,
+    "opening_hours": {
+      "monday": "11:00-22:00",
+      "tuesday": "11:00-22:00",
+      "wednesday": "11:00-22:00",
+      "thursday": "11:00-23:00",
+      "friday": "11:00-23:00",
+      "saturday": "12:00-23:00",
+      "sunday": "12:00-21:00"
+    },
+    "website": "https://mediterraneanbreeze.com"
+  },
+  {
+    "id": 9,
+    "name": "Thai Orchid",
+    "description": "Authentic Thai street food experience",
+    "phone": "+19876543218",
+    "address": "888 Spice Alley, Asia Town",
+    "latitude": 40.7158,
+    "longitude": -74.0031,
+    "avg_price": 24.00,
+    "avg_price_level": 2,
+    "rating": 4.5,
+    "opening_hours": {
+      "monday": "11:00-22:00",
+      "tuesday": "11:00-22:00",
+      "wednesday": "11:00-22:00",
+      "thursday": "11:00-23:00",
+      "friday": "11:00-23:00",
+      "saturday": "12:00-23:00",
+      "sunday": "12:00-21:00"
+    },
+    "website": "https://thaiorchid.com"
+  },
+  {
+    "id": 10,
+    "name": "Pizza Paradise",
+    "description": "Artisanal pizzas with organic ingredients",
+    "phone": "+19876543219",
+    "address": "444 Dough Street, Arts District",
+    "latitude": 40.7245,
+    "longitude": -74.0047,
+    "avg_price": 19.00,
+    "avg_price_level": 1,
+    "rating": 4.0,
+    "opening_hours": {
+      "monday": "12:00-23:00",
+      "tuesday": "12:00-23:00",
+      "wednesday": "12:00-23:00",
+      "thursday": "12:00-00:00",
+      "friday": "12:00-01:00",
+      "saturday": "12:00-01:00",
+      "sunday": "12:00-22:00"
+    },
+    "website": "https://pizzaparadise.com"
+  }
+]
+

@@ -7,11 +7,13 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { PrismaModule } from './prsima/prisma.module';
 import { EventsModule } from './events/events.module';
-import { JwtGuard } from './auth/guards/jwt.guard';
 import { AreasModule } from './areas/areas.module';
 import { VendorsModule } from './vendors/vendors.module';
 import { TalModule } from './external/providers/tal/tal.module';
 import { MenusModule } from './menus/menus.module';
+import { RecommendationsModule } from './recommendations/recommendations.module';
+import { JwtGuard } from './shared/guards/jwt.guard';
+import { RestaurantsModule } from './restaurants/restaurants.module';
 
 @Module({
   imports: [
@@ -26,7 +28,9 @@ import { MenusModule } from './menus/menus.module';
     TalModule,
     AreasModule,
     VendorsModule,
-    MenusModule
+    MenusModule,
+    RecommendationsModule,
+    RestaurantsModule,
   ],
   controllers: [AppController],
   providers: [
