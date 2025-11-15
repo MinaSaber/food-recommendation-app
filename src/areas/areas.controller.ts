@@ -1,4 +1,4 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, Param, Post } from '@nestjs/common';
 import { AreasService } from './areas.service';
 import { Public } from '@/shared/decorators/public.decorator';
 

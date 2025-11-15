@@ -3,6 +3,7 @@ import { AreaDto } from './dtos/area.dto';
 import { TalService } from '@/external/providers/tal/tal.service';
 import * as fs from 'fs';
 import * as path from 'path';
+import { AreasRepository } from './areas.repository';
 
 @Injectable()
 export class AreasService {
@@ -13,13 +14,20 @@ export class AreasService {
     'areas.json',
   );
 
-  constructor(private readonly talservice: TalService) {}
+  constructor(
+    private readonly talservice: TalService,
+    private readonly areasRepository: AreasRepository,
+  ) {}
 
   async getAreas(): Promise<AreaDto[]> {
     const areas = await this.talservice.getTalAreas();
 
     await this.saveAreasToFileIfChanged(areas);
     return areas;
+  }
+
+  async getAreaBySlug(slug: string) {
+    return this.areasRepository.getAreaBySlug(slug);
   }
 
   private async saveAreasToFileIfChanged(newData: AreaDto[]) {

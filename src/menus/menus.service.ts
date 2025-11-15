@@ -16,15 +16,19 @@ export class MenusService {
   ) {}
 
   async getTalMenu(areaId: number, branchId: number) {
-    this.logger.log(`📥 Fetching menu for branchId=${branchId}, areaId=${areaId}`);
+    this.logger.log(
+      `📥 Fetching menu for branchId=${branchId}, areaId=${areaId}`,
+    );
 
     const data = (await this.talService.getTalMenu(areaId, branchId)) as any;
-    const menu = data?.pageProps?.initialMenuState?.menuData ?? { sections: [] };
+    const menu = data?.pageProps?.initialMenuState?.menuData ?? {
+      sections: [],
+    };
 
     const result = {
       restaurant: data?.pageProps?.initialMenuState?.restaurant ?? {},
       items:
-        menu.items?.map(item => ({
+        menu.items?.map((item) => ({
           ...item,
           ingredients: this.ingredientExtractionService.extractIngredients(
             item.description,
@@ -48,7 +52,10 @@ export class MenusService {
 
       fs.writeFileSync(filePath, JSON.stringify(menuData, null, 2), 'utf8');
     } catch (error) {
-      this.logger.error(`❌ Failed to save menu JSON for branchId=${branchId}`, error);
+      this.logger.error(
+        `❌ Failed to save menu JSON for branchId=${branchId}`,
+        error,
+      );
     }
   }
 }

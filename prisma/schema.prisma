@@ -52,24 +52,41 @@ model UserSession {
   @@map("user_sessions")
 }
 
+model Area {
+  id Int @id @default(autoincrement())
+  name String
+  slug String @unique
+  latitude Decimal @db.Decimal
+  longitude Decimal @db.Decimal
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at")
+
+  // Relations
+  restaurants Restaurant[]
+
+  @@map("areas")
+}
+
 model Restaurant {
   id             Int      @id @default(autoincrement())
   name           String   @db.VarChar(255)
   description    String   @db.Text
-  phone          String   @db.VarChar(20) // Assumed max length
-  address        String   @db.Text
+  // phone          String   @db.VarChar(20) // Assumed max length
+  // address        String   @db.Text
   latitude       Decimal    @db.Decimal
   longitude      Decimal    @db.Decimal
-  avgPrice       Decimal    @db.Decimal @map("avg_price")
-  avgPriceLevel  Int      @map("avg_price_level") // (1 = cheap, 2 = mid, 3 = expensive)
+  // avgPrice       Decimal    @db.Decimal @map("avg_price")
+ // avgPriceLevel  Int      @map("avg_price_level") // (1 = cheap, 2 = mid, 3 = expensive)
   rating         Decimal    @db.Decimal
-  openingHours   Json     @map("opening_hours")
-  website        String?  @db.VarChar(255) // optional
+  // openingHours   Json     @map("opening_hours")
+  // website        String?  @db.VarChar(255) // optional
+  areaId      Int      @map("area_id")
   createdAt      DateTime @default(now()) @map("created_at")
   updatedAt      DateTime @updatedAt @map("updated_at")
 
   // Relations
   foodItems      FoodItem[]
+  area           Area     @relation(fields: [areaId], references: [id])
 
   @@map("restaurants")
 }
@@ -88,7 +105,7 @@ model FoodItem {
   updatedAt      DateTime @updatedAt @map("updated_at")
 
   // Relations
-  restaurant     Restaurant @relation(fields: [restaurantId], references: [id])
+  restaurant     Restaurant @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
   events         Event[]
   reviews        Review[]
 

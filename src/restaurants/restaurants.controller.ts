@@ -1,4 +1,4 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, Post, Query } from '@nestjs/common';
 import { RestaurantsService } from './restaurants.service';
 import { Public } from '../shared/decorators/public.decorator';
 
@@ -10,6 +10,12 @@ export class RestaurantsController {
   @Get()
   async getRestaurants() {
     return this.restaurantsService.getRestaurants();
+  }
+
+  @Public()
+  @Post('area')
+  getRestaurantsForArea(@Query('areaSlug') areaSlug: string) {
+    return this.restaurantsService.getTalVendors(areaSlug);
   }
 
   @Public()

@@ -8,7 +8,6 @@ import { AuthModule } from './auth/auth.module';
 import { PrismaModule } from './prsima/prisma.module';
 import { EventsModule } from './events/events.module';
 import { AreasModule } from './areas/areas.module';
-import { VendorsModule } from './vendors/vendors.module';
 import { TalModule } from './external/providers/tal/tal.module';
 import { MenusModule } from './menus/menus.module';
 import { RecommendationsModule } from './recommendations/recommendations.module';
@@ -27,7 +26,6 @@ import { RestaurantsModule } from './restaurants/restaurants.module';
     EventsModule,
     TalModule,
     AreasModule,
-    VendorsModule,
     MenusModule,
     RecommendationsModule,
     RestaurantsModule,
