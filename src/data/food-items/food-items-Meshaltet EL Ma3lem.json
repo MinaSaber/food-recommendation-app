@@ -1,0 +1,390 @@
+{
+  "restaurant": {
+    "id": 705856,
+    "name": "Meshaltet EL Ma3lem",
+    "cuisineString": "Pies, Egyptian",
+    "heroImage": "https://images.deliveryhero.io/image/talabat/restaurants/Pies638934610302796747.jpg?width=750",
+    "logo": "https://images.deliveryhero.io/image/talabat/restaurants/Logo__George_Wadia638934610166091586.jpg?width=180",
+    "rate": 4.6,
+    "totalReviews": 0,
+    "totalRatings": 27,
+    "deliveryFee": "0",
+    "minimumOrderAmount": 0,
+    "avgDeliveryTime": "0 mins",
+    "acceptCreditCard": true,
+    "acceptDebitCard": false,
+    "acceptCash": true,
+    "statusCode": 0,
+    "isTalabatGO": true,
+    "branchName": "Meshaltet EL Ma3lem, Hadayeq Helwan",
+    "areaName": "Hadayeq Helwan",
+    "areaId": null,
+    "branchId": 777554,
+    "restaurantId": 705856,
+    "deliveryAreaId": null,
+    "deliverySchedule": "",
+    "preOrder": false,
+    "latitude": "29.8956354",
+    "longitude": "31.2996972",
+    "verticalType": 0,
+    "isGrocery": false,
+    "status": null,
+    "summary": null,
+    "branchSlug": "meshaltet-el-ma3lem-hadayeq-helwan",
+    "restaurantSlug": "",
+    "branchUrl": "",
+    "isVatInclusive": false,
+    "deliveryChargesType": 0,
+    "altTalabattxt": null,
+    "altMunicipaltxt": "",
+    "altTouristtxt": "",
+    "alternativeDeliveryText": "Delivery fee",
+    "branchLearnMoreLink": "",
+    "IsMigratedToDh": false,
+    "isDarkstore": false,
+    "shopArea": 0,
+    "shopCity": 0,
+    "isCokeRestaurant": false,
+    "isShopSponcered": false,
+    "grlRequired": false,
+    "createdAt": 5279361612,
+    "deliveryTime": 0,
+    "cuisines": [
+      {
+        "id": 632,
+        "name": "Pies",
+        "slug": ""
+      },
+      {
+        "id": 1500,
+        "name": "Egyptian",
+        "slug": ""
+      }
+    ],
+    "menuUrl": "/egypt/restaurant/777554/meshaltet-el-ma3lem-hadayeq-helwan",
+    "view": 0,
+    "promotionText": "",
+    "discountText": "",
+    "isNew": false,
+    "isCateringAvailable": false,
+    "filtersIds": [],
+    "contactlessDelivery": false,
+    "IsProvideTracking": true,
+    "isProvideOrderStatus": true,
+    "shopPosition": 0,
+    "shopType": "TGO",
+    "Sponsored": null,
+    "availablePaymentMethods": [
+      {
+        "logo": "visa_blue.png",
+        "text": "common:visa.translation",
+        "dimension": {
+          "width": 35,
+          "height": 20
+        }
+      },
+      {
+        "logo": "logo-mastercard.svg",
+        "text": "common:mastercard.translation",
+        "dimension": {
+          "width": 33,
+          "height": 20
+        }
+      },
+      {
+        "logo": "logo-cash.svg",
+        "text": "common:cash.translation",
+        "dimension": {
+          "width": 30,
+          "height": 20
+        }
+      }
+    ],
+    "countryId": 9
+  },
+  "items": [
+    {
+      "id": 2294807050,
+      "name": "Feteer Meshaltet",
+      "description": "A traditional Egyptian pie with an authentic taste, available in different sizes",
+      "price": 0,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/فطير_مشلتت638935552421420598.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/فطير_مشلتت638935552421420598.jpg",
+      "hasChoices": true,
+      "sectionName": "Picks for you 🔥",
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 2294773877,
+      "name": "old cheese jar",
+      "description": "experience the concentrated flavor of old cheese, a distinctive addition enhancing your dishes.",
+      "price": 15,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/جبنة_قديمة638935552526304286.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/جبنة_قديمة638935552526304286.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "cheese"
+      ]
+    },
+    {
+      "id": 2294773876,
+      "name": "black honey jar",
+      "description": "a jar of rich black honey, adding sweetness and depth to any meal or dessert.",
+      "price": 15,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773876/2f6db7fe-2f64-4992-889b-b36a715ff314.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773876/2f6db7fe-2f64-4992-889b-b36a715ff314.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "honey"
+      ]
+    },
+    {
+      "id": 2294773875,
+      "name": "plain and sugar couscous",
+      "description": "savor plain couscous with a hint of sugar for a simple, delightful dish.",
+      "price": 20,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773875/50d1e5d4-29a9-40d4-8d76-b23e6d1b2e64.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773875/50d1e5d4-29a9-40d4-8d76-b23e6d1b2e64.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "couscous",
+        "sugar"
+      ]
+    },
+    {
+      "id": 2294773878,
+      "name": "tahini jar",
+      "description": "rich and creamy tahini in a full jar, perfect for serving with salads and appetizers.",
+      "price": 15,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/طحينه638935552540643970.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/طحينه638935552540643970.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "tahini"
+      ]
+    },
+    {
+      "id": 2294773881,
+      "name": "couscous with milk and sugar",
+      "description": "enjoy a classic couscous meal with milk and sugar, warm and filled with delightful flavor.",
+      "price": 30,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773881/ae0d366d-36da-47bd-b75a-cc025dcc6c0b.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773881/ae0d366d-36da-47bd-b75a-cc025dcc6c0b.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "milk",
+        "couscous",
+        "sugar"
+      ]
+    },
+    {
+      "id": 2294773875,
+      "name": "plain and sugar couscous",
+      "description": "savor plain couscous with a hint of sugar for a simple, delightful dish.",
+      "price": 20,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773875/50d1e5d4-29a9-40d4-8d76-b23e6d1b2e64.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773875/50d1e5d4-29a9-40d4-8d76-b23e6d1b2e64.jpg",
+      "hasChoices": false,
+      "sectionName": "couscous",
+      "sectionId": 19875540,
+      "originalSection": "couscous",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "couscous",
+        "sugar"
+      ]
+    },
+    {
+      "id": 2294773880,
+      "name": "couscous with nuts and milk",
+      "description": "try couscous enriched with nuts and milk, adding a delicious and nutritious twist to this traditional dish.",
+      "price": 45,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/كسكسي_لبن_و_مكسرات638935552353786719.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/كسكسي_لبن_و_مكسرات638935552353786719.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 19875540,
+      "originalSection": "couscous",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "milk",
+        "couscous"
+      ]
+    },
+    {
+      "id": 2294773881,
+      "name": "couscous with milk and sugar",
+      "description": "enjoy a classic couscous meal with milk and sugar, warm and filled with delightful flavor.",
+      "price": 30,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773881/ae0d366d-36da-47bd-b75a-cc025dcc6c0b.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773881/ae0d366d-36da-47bd-b75a-cc025dcc6c0b.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 19875540,
+      "originalSection": "couscous",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "milk",
+        "couscous",
+        "sugar"
+      ]
+    },
+    {
+      "id": 2294807050,
+      "name": "Feteer Meshaltet",
+      "description": "A traditional Egyptian pie with an authentic taste, available in different sizes",
+      "price": 0,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/فطير_مشلتت638935552421420598.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/فطير_مشلتت638935552421420598.jpg",
+      "hasChoices": true,
+      "sectionName": "Feteer Meshaltet",
+      "sectionId": 19875541,
+      "originalSection": "Feteer Meshaltet",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 2294773876,
+      "name": "black honey jar",
+      "description": "a jar of rich black honey, adding sweetness and depth to any meal or dessert.",
+      "price": 15,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773876/2f6db7fe-2f64-4992-889b-b36a715ff314.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/777549/product/2294773876/2f6db7fe-2f64-4992-889b-b36a715ff314.jpg",
+      "hasChoices": false,
+      "sectionName": "additives",
+      "sectionId": 19875542,
+      "originalSection": "additives",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "honey"
+      ]
+    },
+    {
+      "id": 2294773877,
+      "name": "old cheese jar",
+      "description": "experience the concentrated flavor of old cheese, a distinctive addition enhancing your dishes.",
+      "price": 15,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/جبنة_قديمة638935552526304286.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/جبنة_قديمة638935552526304286.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 19875542,
+      "originalSection": "additives",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "cheese"
+      ]
+    },
+    {
+      "id": 2294773878,
+      "name": "tahini jar",
+      "description": "rich and creamy tahini in a full jar, perfect for serving with salads and appetizers.",
+      "price": 15,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/طحينه638935552540643970.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/طحينه638935552540643970.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 19875542,
+      "originalSection": "additives",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "tahini"
+      ]
+    },
+    {
+      "id": 2294773879,
+      "name": "white honey jar",
+      "description": "discover the aromatic flavor of pure white honey, perfect for sweetening and elevating any dish.",
+      "price": 20,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/عسل638935552562117474.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/عسل638935552562117474.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 19875542,
+      "originalSection": "additives",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "honey"
+      ]
+    }
+  ]
+}

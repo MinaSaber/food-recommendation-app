@@ -47,7 +47,7 @@
     "isCokeRestaurant": true,
     "isShopSponcered": false,
     "grlRequired": false,
-    "createdAt": 82098589775,
+    "createdAt": 82098748956,
     "deliveryTime": 0,
     "cuisines": [
       {
@@ -170,6 +170,27 @@
       "ingredients": []
     },
     {
+      "id": 2391893372,
+      "name": "Flash Offer",
+      "description": "5 pieces of fried chicken without wings + bread",
+      "price": 229,
+      "oldPrice": 399,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/6D552372E133F3878818DA2F8DF701A1?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/6D552372E133F3878818DA2F8DF701A1",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "chicken",
+        "bread"
+      ]
+    },
+    {
       "id": 1604602383,
       "name": "Double Fire Combo",
       "description": "1 Double Fire Chicken + 1 Medium Fries + 1 Drink",
@@ -189,24 +210,6 @@
         "chicken",
         "fries"
       ]
-    },
-    {
-      "id": 1048042110,
-      "name": "Fries M",
-      "description": "",
-      "price": 50,
-      "oldPrice": -1,
-      "rating": 0,
-      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/69CEB3FE36E6B8AF551A22575745BD91?width=172&amp;height=172",
-      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/69CEB3FE36E6B8AF551A22575745BD91",
-      "hasChoices": false,
-      "sectionName": null,
-      "sectionId": -1,
-      "originalSection": "Picks for you 🔥",
-      "isItemDiscount": false,
-      "isWithImage": true,
-      "isTopRatedItem": false,
-      "ingredients": []
     },
     {
       "id": 1048042115,
