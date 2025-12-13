@@ -15,7 +15,8 @@ export class TalService {
   async getTalAreas(): Promise<AreaDto[]> {
     const egyptCountryId = 9;
     const url = `${TAL_BASE_URL}${TAL_AREA_PATH}/${egyptCountryId}`;
-    return this.http.get(url);
+    const response = await this.http.get<{ areas: AreaDto[] }>(url);
+    return response.areas || [];
   }
 
   getTalVendors(areaId: number, areaSlug: string, countrySlug = 'egypt') {

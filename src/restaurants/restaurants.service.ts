@@ -1,6 +1,11 @@
 import { RestaurantsRepository } from './restaurants.repository';
-import { Injectable, NotFoundException } from '@nestjs/common';
-import { FoodItemsService } from '../food-items/food-items.service';
+import {
+  forwardRef,
+  Inject,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
+import { FoodItemsService } from '@/food-items/food-items.service';
 import { TalService } from '@/external/providers/tal/tal.service';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -33,6 +38,8 @@ export class RestaurantsService {
     private readonly restaurantsRepository: RestaurantsRepository,
     private readonly talservice: TalService,
     private readonly areasService: AreasService,
+    @Inject(forwardRef(() => FoodItemsService))
+    private readonly foodItemsService: FoodItemsService,
   ) {}
 
   async getRestaurants() {
@@ -52,12 +59,13 @@ export class RestaurantsService {
   }
 
   async getFoodItemsForRestaurant(restaurantId: number) {
-    // const restaurant =
-    //   await this.restaurantsRepository.getRestaurantById(restaurantId);
-    // if (!restaurant) {
-    //   throw new NotFoundException('Restaurant not found');
-    // }
-    // return this.foodItemsService.getFoodItemsForRestaurant(restaurant.id);
+    const restaurant =
+      await this.restaurantsRepository.getRestaurantById(restaurantId);
+    if (!restaurant) {
+      throw new NotFoundException('Restaurant not found');
+    }
+
+    return this.foodItemsService.getFoodItemsForRestaurant(restaurant.id);
   }
 
   async getTalVendors(areaSlug: string) {

@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { forwardRef, Module } from '@nestjs/common';
 import { FoodItemsService } from './food-items.service';
 import { FoodItemsRepository } from './food-items.repository';
 import { PrismaModule } from '../prsima/prisma.module';
@@ -12,7 +12,7 @@ import { RestaurantsModule } from '@/restaurants/restaurants.module';
     PrismaModule,
     TalModule,
     IngredientExtractorModule,
-    RestaurantsModule,
+    forwardRef(() => RestaurantsModule),
   ],
   controllers: [FoodItemsController],
   providers: [FoodItemsService, FoodItemsRepository],

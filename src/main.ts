@@ -4,7 +4,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  
+
   // Enable global validation
   app.useGlobalPipes(
     new ValidationPipe({
@@ -17,21 +17,21 @@ async function bootstrap() {
       exceptionFactory: (errors) => {
         // Group errors by field
         const errorsByField: Record<string, string[]> = {};
-        
+
         errors.forEach((error) => {
           const field = error.property;
           const constraints = error.constraints || {};
-          
+
           if (!errorsByField[field]) {
             errorsByField[field] = [];
           }
-          
+
           // Add all constraint messages for this field
           Object.values(constraints).forEach((message) => {
             errorsByField[field].push(message);
           });
         });
-        
+
         return new BadRequestException({
           message: 'Validation failed',
           errors: errorsByField,
@@ -40,7 +40,11 @@ async function bootstrap() {
       },
     }),
   );
-  
-  await app.listen(process.env.PORT ?? 3000);
+
+  const port = process.env.PORT ?? 3000;
+  const host = process.env.HOST ?? 'localhost';
+
+  await app.listen(port, host);
+  console.log(`🚀 Application is running on: http://${host}:${port}`);
 }
 bootstrap();

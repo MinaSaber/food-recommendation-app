@@ -11,6 +11,7 @@ export class AuthService {
 
   async login(phoneNumber: string) {
     return {
+      success: true,
       message: 'OTP has been sent to your phone number',
     };
   }
@@ -33,6 +34,7 @@ export class AuthService {
     }
 
     return {
+      success: true,
       message: 'Login successful',
       token: session.token,
     };

@@ -5,7 +5,7 @@
     "cuisineString": "Desserts, Fast Food, Sandwiches",
     "heroImage": "https://images.deliveryhero.io/image/talabat/restaurants/1424901b58.jpg?width=750",
     "logo": "https://images.deliveryhero.io/image/talabat/restaurants/e6dr_sqp.jpg?v=20180724151211?width=180",
-    "rate": 4.8,
+    "rate": 4.4,
     "totalReviews": 0,
     "totalRatings": 1000,
     "deliveryFee": "0",
@@ -47,7 +47,7 @@
     "isCokeRestaurant": false,
     "isShopSponcered": false,
     "grlRequired": false,
-    "createdAt": 104267005986,
+    "createdAt": 105816749637,
     "deliveryTime": 0,
     "cuisines": [
       {
@@ -114,7 +114,7 @@
     {
       "id": 1884506138,
       "name": "Large Hawawshi",
-      "description": "Baladi hawawshi. Served with Sesame paste and pickles",
+      "description": "Baladi hawawshi. Served with Sesame paste ",
       "price": 75,
       "oldPrice": -1,
       "rating": 5,
@@ -128,7 +128,6 @@
       "isWithImage": true,
       "isTopRatedItem": false,
       "ingredients": [
-        "pickles",
         "sesame"
       ]
     },
@@ -160,8 +159,8 @@
       "price": 140,
       "oldPrice": -1,
       "rating": 5,
-      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683590876166083?width=172&amp;height=172",
-      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683590876166083",
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506095/c659a732-eada-49c3-aa5d-b19d9e2a4b20_enhanced.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506095/c659a732-eada-49c3-aa5d-b19d9e2a4b20_enhanced.jpg",
       "hasChoices": false,
       "sectionName": null,
       "sectionId": -1,
@@ -178,11 +177,31 @@
       "id": 1884506143,
       "name": "Sesame Paste Salad",
       "description": "Made with a blend of vegetables and sesame paste, it's a perfect mix of flavors and textures, ideal to enjoy as a side dish.",
-      "price": 15,
+      "price": 18,
       "oldPrice": -1,
       "rating": 4,
       "image": "https://images.deliveryhero.io/image/talabat/MenuItems/طحينة_637473655452167002.png?width=172&amp;height=172",
       "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/طحينة_637473655452167002.png",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "sesame"
+      ]
+    },
+    {
+      "id": 1884506139,
+      "name": "Large Hawawshi With Cheese",
+      "description": "Served with Sesame paste",
+      "price": 100,
+      "oldPrice": -1,
+      "rating": 5,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683597096334271?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683597096334271",
       "hasChoices": false,
       "sectionName": null,
       "sectionId": -1,
@@ -216,35 +235,14 @@
       ]
     },
     {
-      "id": 1884506139,
-      "name": "Large Hawawshi With Cheese",
-      "description": "Served with Sesame paste and pickles",
-      "price": 100,
-      "oldPrice": -1,
-      "rating": 5,
-      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683597096334271?width=172&amp;height=172",
-      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683597096334271",
-      "hasChoices": false,
-      "sectionName": null,
-      "sectionId": -1,
-      "originalSection": "Picks for you 🔥",
-      "isItemDiscount": false,
-      "isWithImage": true,
-      "isTopRatedItem": false,
-      "ingredients": [
-        "pickles",
-        "sesame"
-      ]
-    },
-    {
       "id": 1884506072,
       "name": "Kilo Grilled Sausage",
       "description": "Served with 2 green salads, 2 sesame paste salads and 6 bread.",
       "price": 475,
       "oldPrice": -1,
       "rating": 0,
-      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683581972802578?width=172&amp;height=172",
-      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683581972802578",
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506072/e83d41a4-59e9-4a61-94f0-eda0dcac4bce_enhanced.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506072/e83d41a4-59e9-4a61-94f0-eda0dcac4bce_enhanced.jpg",
       "hasChoices": false,
       "sectionName": "Grills",
       "sectionId": 16914026,
@@ -256,6 +254,81 @@
         "bread",
         "sesame"
       ]
+    },
+    {
+      "id": 2443887425,
+      "name": "Kilo Steak meat",
+      "description": "Charcoal-grilled steak served with salad, tahini, and bread",
+      "price": 1000,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/761e2cd2-c4d6-4d2b-b2c7-aa9eefe21ab8.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/761e2cd2-c4d6-4d2b-b2c7-aa9eefe21ab8.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 16914026,
+      "originalSection": "Grills",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "bread",
+        "tahini"
+      ]
+    },
+    {
+      "id": 2443887433,
+      "name": "3/4steak",
+      "description": "3/4 grilled steak",
+      "price": 810,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/d02e2101-6559-49df-9e11-0ed389121742.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/d02e2101-6559-49df-9e11-0ed389121742.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 16914026,
+      "originalSection": "Grills",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 2443905679,
+      "name": "1/4 steak",
+      "description": "1/4 grilled steak",
+      "price": 277,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/2443905679/6111ddc8-adbe-4d71-915e-7aa459b22cf6.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/2443905679/6111ddc8-adbe-4d71-915e-7aa459b22cf6.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 16914026,
+      "originalSection": "Grills",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 2443924940,
+      "name": "1/2 steak",
+      "description": "1/2kilo steak",
+      "price": 510,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/243f56a8-c466-41d6-abae-114cb9299a65.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/243f56a8-c466-41d6-abae-114cb9299a65.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 16914026,
+      "originalSection": "Grills",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
     },
     {
       "id": 1884506073,
@@ -705,8 +778,8 @@
       "price": 140,
       "oldPrice": -1,
       "rating": 5,
-      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683590876166083?width=172&amp;height=172",
-      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638683590876166083",
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506095/c659a732-eada-49c3-aa5d-b19d9e2a4b20_enhanced.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506095/c659a732-eada-49c3-aa5d-b19d9e2a4b20_enhanced.jpg",
       "hasChoices": false,
       "sectionName": null,
       "sectionId": 16914026,
@@ -797,7 +870,7 @@
       "originalSection": "Grills",
       "isItemDiscount": false,
       "isWithImage": true,
-      "isTopRatedItem": false,
+      "isTopRatedItem": true,
       "ingredients": [
         "bread",
         "sesame"
@@ -1071,8 +1144,8 @@
       "price": 300,
       "oldPrice": -1,
       "rating": 5,
-      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638143137179952618?width=172&amp;height=172",
-      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/mmw_638143137179952618",
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506109/618f6212-6d93-41d7-8175-fd7cd45c9996_enhanced.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506109/618f6212-6d93-41d7-8175-fd7cd45c9996_enhanced.jpg",
       "hasChoices": false,
       "sectionName": null,
       "sectionId": 16914026,
@@ -1129,7 +1202,7 @@
     },
     {
       "id": 1884506112,
-      "name": "Meal 1",
+      "name": "Half a chicken + kofta meal",
       "description": "Half chicken and 3 pieces of kofta, served with rice, green salad, sesame paste and bread",
       "price": 310,
       "oldPrice": -1,
@@ -1142,7 +1215,7 @@
       "originalSection": "Abo Fa7ma Meals",
       "isItemDiscount": false,
       "isWithImage": true,
-      "isTopRatedItem": false,
+      "isTopRatedItem": true,
       "ingredients": [
         "chicken",
         "bread",
@@ -1151,8 +1224,95 @@
       ]
     },
     {
+      "id": 2416758641,
+      "name": "Quarter kebab meal",
+      "description": "A meal of kebab, rice, salad, tahini, and bread.",
+      "price": 300,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/7a0a363e-ca45-4cd6-bf1b-5940e6ef75f6.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/7a0a363e-ca45-4cd6-bf1b-5940e6ef75f6.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 16914027,
+      "originalSection": "Abo Fa7ma Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "bread",
+        "rice",
+        "tahini"
+      ]
+    },
+    {
+      "id": 2416758643,
+      "name": "Abu Fahma Mix Meal (Kebab + Kofta + Shish Tawook)",
+      "description": "Abu Fahma Mix Meal (Meat, Shish Tawook, Kofta)\nRice, Salad, Tahini, and Bread",
+      "price": 390,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/c2e5c7f5-c0a7-43d2-8b5a-c5e5a118ca82.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/c2e5c7f5-c0a7-43d2-8b5a-c5e5a118ca82.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 16914027,
+      "originalSection": "Abo Fa7ma Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "bread",
+        "rice",
+        "tahini"
+      ]
+    },
+    {
+      "id": 2443887427,
+      "name": "Steak meal",
+      "description": "A charcoal-grilled steak meal served with rice, salad, tahini, and bread.",
+      "price": 300,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/decf7c59-71bc-42a2-8af2-feb33b79c124.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/decf7c59-71bc-42a2-8af2-feb33b79c124.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 16914027,
+      "originalSection": "Abo Fa7ma Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "bread",
+        "rice",
+        "tahini"
+      ]
+    },
+    {
+      "id": 2451681899,
+      "name": "Quarter chicken breast meal",
+      "description": "Chicken with rice",
+      "price": 145,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/6fa28fc1-1f54-435a-843a-c86918704fdd.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/6fa28fc1-1f54-435a-843a-c86918704fdd.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 16914027,
+      "originalSection": "Abo Fa7ma Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "chicken",
+        "rice"
+      ]
+    },
+    {
       "id": 1884506113,
-      "name": "Meal 2",
+      "name": "Quarter chicken meal + 6 kofta",
       "description": "Quarter chicken and 6 pieces of kofta, served with rice, green salad, sesame paste and bread",
       "price": 310,
       "oldPrice": -1,
@@ -1175,7 +1335,7 @@
     },
     {
       "id": 1884506114,
-      "name": "Meal 3",
+      "name": "Half a chicken meal",
       "description": "Half chicken, served with rice, green salad, sesame paste and bread",
       "price": 240,
       "oldPrice": -1,
@@ -1198,8 +1358,8 @@
     },
     {
       "id": 1884506115,
-      "name": "Meal 4",
-      "description": "Quarter chicken, served with rice, green salad, sesame paste and bread",
+      "name": "Quarter chicken meal",
+      "description": "A quarter of a chicken leg with rice",
       "price": 130,
       "oldPrice": -1,
       "rating": 4,
@@ -1214,14 +1374,12 @@
       "isTopRatedItem": true,
       "ingredients": [
         "chicken",
-        "bread",
-        "rice",
-        "sesame"
+        "rice"
       ]
     },
     {
       "id": 1884506116,
-      "name": "Meal 5",
+      "name": "Quarter chicken + 3kofta meal",
       "description": "Quarter chicken and 3 pieces of kofta, served with rice, green salad, sesame paste and bread",
       "price": 220,
       "oldPrice": -1,
@@ -1244,7 +1402,7 @@
     },
     {
       "id": 1884506117,
-      "name": "Meal 6",
+      "name": "Quarter chicken breast meal",
       "description": "1/4 Kilo chicken pane, served with rice, green salad, sesame paste and bread",
       "price": 160,
       "oldPrice": -1,
@@ -1267,7 +1425,7 @@
     },
     {
       "id": 1884506118,
-      "name": "Meal 7",
+      "name": "Quarter Shish Tawook Meal",
       "description": "1/4 Kilo shish tawook, served with rice, green salad, sesame paste and bread",
       "price": 160,
       "oldPrice": -1,
@@ -1289,7 +1447,7 @@
     },
     {
       "id": 1884506119,
-      "name": "Meal 8",
+      "name": "Kofta + Tarab meal",
       "description": "2 Pieces of tarb and 3 pieces of kofta, served with rice, green salad, sesame paste and bread",
       "price": 220,
       "oldPrice": -1,
@@ -1311,7 +1469,7 @@
     },
     {
       "id": 1884506120,
-      "name": "Meal 9",
+      "name": "Quarter kofta meal",
       "description": "6 Pieces of kofta, served with rice, green salad, sesame paste and bread",
       "price": 160,
       "oldPrice": -1,
@@ -1333,7 +1491,7 @@
     },
     {
       "id": 1884506121,
-      "name": "Meal 10",
+      "name": "Shish Tawook + Kofta Meal",
       "description": "3 Pieces of shish tawook and 3 pieces of kofta, served with rice, green salad, sesame paste and brea",
       "price": 220,
       "oldPrice": -1,
@@ -1354,7 +1512,7 @@
     },
     {
       "id": 1884506122,
-      "name": "Meal 11",
+      "name": "4-piece shish tawook meal",
       "description": "4 Pieces of shish tawook, served with rice, green salad, sesame paste and bread",
       "price": 150,
       "oldPrice": -1,
@@ -1376,7 +1534,7 @@
     },
     {
       "id": 1884506123,
-      "name": "Meal 12",
+      "name": "Meal 4 pieces of kofta",
       "description": "4 Pieces of kofta, served with rice, green salad, sesame paste and bread",
       "price": 150,
       "oldPrice": -1,
@@ -1398,7 +1556,7 @@
     },
     {
       "id": 1884506124,
-      "name": "Meal 13",
+      "name": "Kebab + Kofta Meal",
       "description": "Kabab, kofta, served with rice, green salad, sesame paste, and bread",
       "price": 265,
       "oldPrice": -1,
@@ -1420,7 +1578,7 @@
     },
     {
       "id": 1884506125,
-      "name": "Meal 14",
+      "name": "Quarter of a grilled sausage meal",
       "description": "Oriental sausage 1/4 kilo, served with rice, green salad, sesame paste, and bread.",
       "price": 160,
       "oldPrice": -1,
@@ -1443,7 +1601,7 @@
     },
     {
       "id": 835592666,
-      "name": "Meal15",
+      "name": "4-piece burger meal",
       "description": "Meal: 4 burger pieces + rice + salad + tahini + bread",
       "price": 160,
       "oldPrice": -1,
@@ -1465,7 +1623,7 @@
     },
     {
       "id": 1363784885,
-      "name": "Meal 16",
+      "name": "4-piece Tarab meal",
       "description": "A meal of 4 pieces of grilled tarb + basmati rice + bread + salad + tahini",
       "price": 240,
       "oldPrice": -1,
@@ -1523,6 +1681,26 @@
       "isTopRatedItem": true,
       "ingredients": [
         "rice"
+      ]
+    },
+    {
+      "id": 2417014628,
+      "name": "bread",
+      "description": "Bread made with premium white flour",
+      "price": 3,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/766ac398-43fd-4e75-b688-692e7d2eb720.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/766ac398-43fd-4e75-b688-692e7d2eb720.jpg",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 16914028,
+      "originalSection": "Side Items",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        "bread"
       ]
     },
     {
@@ -1735,7 +1913,7 @@
     {
       "id": 1884506138,
       "name": "Large Hawawshi",
-      "description": "Baladi hawawshi. Served with Sesame paste and pickles",
+      "description": "Baladi hawawshi. Served with Sesame paste ",
       "price": 75,
       "oldPrice": -1,
       "rating": 5,
@@ -1749,14 +1927,13 @@
       "isWithImage": true,
       "isTopRatedItem": true,
       "ingredients": [
-        "pickles",
         "sesame"
       ]
     },
     {
       "id": 1884506139,
       "name": "Large Hawawshi With Cheese",
-      "description": "Served with Sesame paste and pickles",
+      "description": "Served with Sesame paste",
       "price": 100,
       "oldPrice": -1,
       "rating": 5,
@@ -1770,7 +1947,6 @@
       "isWithImage": true,
       "isTopRatedItem": true,
       "ingredients": [
-        "pickles",
         "sesame"
       ]
     },
@@ -1795,16 +1971,36 @@
       ]
     },
     {
+      "id": 1884506141,
+      "name": "Green Salad",
+      "description": "Healthy and delicious - made from a variety of fresh greens that can be topped with a dressing to add flavor and nutrition. it's a great option for a light lunch or as a side dish to complement any meal.",
+      "price": 18,
+      "oldPrice": -1,
+      "rating": 5,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/20191216_Talabat_UAE_637465748794474474.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/20191216_Talabat_UAE_637465748794474474.jpg",
+      "hasChoices": false,
+      "sectionName": "Salads",
+      "sectionId": 16914030,
+      "originalSection": "Salads",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        "dressing"
+      ]
+    },
+    {
       "id": 1884506142,
       "name": "Pickled Cucumber",
       "description": " Made with fresh cucumbers and a secret blend of spices, delivering a tangy and refreshing flavor that is sure to enhance any dish!",
-      "price": 15,
+      "price": 18,
       "oldPrice": -1,
       "rating": 4,
-      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/IMG_6673_637473655252174684.jpg?width=172&amp;height=172",
-      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/IMG_6673_637473655252174684.jpg",
+      "image": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506142/8a4ae0d8-e340-4063-8a4d-9f178ffabf90_enhanced.jpg?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/global-menu-service/HF_EG/vendor/653235/product/1884506142/8a4ae0d8-e340-4063-8a4d-9f178ffabf90_enhanced.jpg",
       "hasChoices": false,
-      "sectionName": "Salads",
+      "sectionName": null,
       "sectionId": 16914030,
       "originalSection": "Salads",
       "isItemDiscount": false,
@@ -1816,7 +2012,7 @@
       "id": 1884506143,
       "name": "Sesame Paste Salad",
       "description": "Made with a blend of vegetables and sesame paste, it's a perfect mix of flavors and textures, ideal to enjoy as a side dish.",
-      "price": 15,
+      "price": 18,
       "oldPrice": -1,
       "rating": 4,
       "image": "https://images.deliveryhero.io/image/talabat/MenuItems/طحينة_637473655452167002.png?width=172&amp;height=172",
@@ -1836,7 +2032,7 @@
       "id": 1884506145,
       "name": "Baba Ghannoug Salad",
       "description": "Made with cooked and mashed eggplants, mixed with vegetables,  delicious salad that is perfect as a side dish or a light meal.",
-      "price": 15,
+      "price": 18,
       "oldPrice": -1,
       "rating": 0,
       "image": "https://images.deliveryhero.io/image/talabat/MenuItems/20200107_Talabat_UAE_637514887175144230.jpg?width=172&amp;height=172",
@@ -1854,7 +2050,7 @@
       "id": 1884506146,
       "name": "Pickled Eggplant",
       "description": "Savor the tangy, salty, and sour flavors in every bite of these mouth-watering Pickled Eggplants.",
-      "price": 15,
+      "price": 18,
       "oldPrice": -1,
       "rating": 4,
       "image": "https://images.deliveryhero.io/image/talabat/MenuItems/20190617_talabatUAE__637514887182684682.jpg?width=172&amp;height=172",

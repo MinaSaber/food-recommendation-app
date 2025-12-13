@@ -6,7 +6,6 @@ import { Public } from '../shared/decorators/public.decorator';
 export class RestaurantsController {
   constructor(private readonly restaurantsService: RestaurantsService) {}
 
-  @Public()
   @Get()
   async getRestaurants() {
     return this.restaurantsService.getRestaurants();
@@ -18,9 +17,8 @@ export class RestaurantsController {
     return this.restaurantsService.getTalVendors(areaSlug);
   }
 
-  // @Public()
-  // @Get(':id/food-items')
-  // async getFoodItemsForRestaurant(@Param('id') id: number) {
-  //   return this.restaurantsService.getFoodItemsForRestaurant(id);
-  // }
+  @Get(':id/food-items')
+  async getFoodItemsForRestaurant(@Param('id') id: number) {
+    return this.restaurantsService.getFoodItemsForRestaurant(id);
+  }
 }

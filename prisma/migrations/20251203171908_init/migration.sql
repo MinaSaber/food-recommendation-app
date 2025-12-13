@@ -2,15 +2,16 @@
 CREATE TYPE "Gender" AS ENUM ('male', 'female');
 
 -- CreateEnum
-CREATE TYPE "EventType" AS ENUM ('view', 'click', 'like', 'order', 'rate');
+CREATE TYPE "EventType" AS ENUM ('view', 'click', 'like', 'share', 'order', 'rate');
+
+-- CreateEnum
+CREATE TYPE "UserSessionStatus" AS ENUM ('active', 'inactive', 'expired');
 
 -- CreateTable
 CREATE TABLE "users" (
     "id" SERIAL NOT NULL,
     "name" VARCHAR(255),
     "phone_number" VARCHAR(20) NOT NULL,
-    "email" TEXT,
-    "password" VARCHAR(255),
     "age" INTEGER,
     "gender" "Gender",
     "budget_preference" TEXT,
@@ -27,6 +28,7 @@ CREATE TABLE "user_sessions" (
     "user_id" INTEGER NOT NULL,
     "token" VARCHAR(255) NOT NULL,
     "expires_at" TIMESTAMP(3) NOT NULL,
+    "status" "UserSessionStatus" NOT NULL DEFAULT 'active',
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL,
 
@@ -34,19 +36,27 @@ CREATE TABLE "user_sessions" (
 );
 
 -- CreateTable
+CREATE TABLE "areas" (
+    "id" SERIAL NOT NULL,
+    "name" TEXT NOT NULL,
+    "slug" TEXT NOT NULL,
+    "latitude" DECIMAL NOT NULL,
+    "longitude" DECIMAL NOT NULL,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "areas_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
 CREATE TABLE "restaurants" (
     "id" SERIAL NOT NULL,
     "name" VARCHAR(255) NOT NULL,
     "description" TEXT NOT NULL,
-    "phone" VARCHAR(20) NOT NULL,
-    "address" TEXT NOT NULL,
     "latitude" DECIMAL NOT NULL,
     "longitude" DECIMAL NOT NULL,
-    "avg_price" DECIMAL NOT NULL,
-    "avg_price_level" INTEGER NOT NULL,
     "rating" DECIMAL NOT NULL,
-    "opening_hours" JSONB NOT NULL,
-    "website" VARCHAR(255),
+    "area_id" INTEGER NOT NULL,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL,
 
@@ -59,9 +69,8 @@ CREATE TABLE "food_items" (
     "restaurant_id" INTEGER NOT NULL,
     "name" VARCHAR(255) NOT NULL,
     "description" TEXT NOT NULL,
-    "category" VARCHAR(100) NOT NULL,
     "price" DECIMAL NOT NULL,
-    "ingredients" JSONB NOT NULL,
+    "ingredients" TEXT[],
     "image_url" TEXT,
     "rating" DECIMAL NOT NULL,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -76,7 +85,7 @@ CREATE TABLE "events" (
     "user_id" INTEGER NOT NULL,
     "item_id" INTEGER NOT NULL,
     "event_type" "EventType" NOT NULL,
-    "value" DOUBLE PRECISION,
+    "value" DECIMAL NOT NULL,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "events_pkey" PRIMARY KEY ("id")
@@ -136,7 +145,7 @@ CREATE TABLE "admin_actions" (
 CREATE UNIQUE INDEX "users_phone_number_key" ON "users"("phone_number");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "users_email_key" ON "users"("email");
+CREATE UNIQUE INDEX "areas_slug_key" ON "areas"("slug");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "admins_email_key" ON "admins"("email");
@@ -148,7 +157,10 @@ CREATE UNIQUE INDEX "roles_name_key" ON "roles"("name");
 ALTER TABLE "user_sessions" ADD CONSTRAINT "user_sessions_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "users"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "food_items" ADD CONSTRAINT "food_items_restaurant_id_fkey" FOREIGN KEY ("restaurant_id") REFERENCES "restaurants"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "restaurants" ADD CONSTRAINT "restaurants_area_id_fkey" FOREIGN KEY ("area_id") REFERENCES "areas"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "food_items" ADD CONSTRAINT "food_items_restaurant_id_fkey" FOREIGN KEY ("restaurant_id") REFERENCES "restaurants"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "events" ADD CONSTRAINT "events_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "users"("id") ON DELETE RESTRICT ON UPDATE CASCADE;

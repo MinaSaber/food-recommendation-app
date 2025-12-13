@@ -1,4 +1,10 @@
-import { Injectable, Logger, NotFoundException } from '@nestjs/common';
+import {
+  forwardRef,
+  Inject,
+  Injectable,
+  Logger,
+  NotFoundException,
+} from '@nestjs/common';
 import { FoodItemsRepository } from './food-items.repository';
 import * as path from 'path';
 import { TalService } from '@/external/providers/tal/tal.service';
@@ -21,6 +27,7 @@ export class FoodItemsService {
     private readonly foodItemsRepository: FoodItemsRepository,
     private readonly talService: TalService,
     private readonly ingredientExtractionService: IngredientExtractorService,
+    @Inject(forwardRef(() => RestaurantsService))
     private readonly restaurantsService: RestaurantsService,
   ) {}
 

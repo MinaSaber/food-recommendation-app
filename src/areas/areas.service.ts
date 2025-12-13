@@ -4,6 +4,7 @@ import { TalService } from '@/external/providers/tal/tal.service';
 import * as fs from 'fs';
 import * as path from 'path';
 import { AreasRepository } from './areas.repository';
+import { Prisma } from '../../generated/prisma/client';
 
 @Injectable()
 export class AreasService {
@@ -22,8 +23,12 @@ export class AreasService {
   async getAreas(): Promise<AreaDto[]> {
     const areas = await this.talservice.getTalAreas();
 
-    await this.saveAreasToFileIfChanged(areas);
-    return areas;
+    // Ensure areas is an array
+    const areasArray = Array.isArray(areas) ? areas : [];
+
+    await this.saveAreasToFileIfChanged(areasArray);
+    await this.saveAreasToDatabase(areasArray);
+    return areasArray;
   }
 
   async getAreaBySlug(slug: string) {
@@ -62,5 +67,21 @@ export class AreasService {
     if (oldJson !== newJson) {
       fs.writeFileSync(this.filePath, newJson, 'utf-8');
     }
+  }
+
+  private async saveAreasToDatabase(areas: AreaDto[]) {
+    // Ensure we have an array before mapping
+    if (!Array.isArray(areas) || areas.length === 0) {
+      return;
+    }
+
+    const areasToSave = areas.map((area) => ({
+      slug: area.slug,
+      name: area.name,
+      latitude: new Prisma.Decimal(area.lat),
+      longitude: new Prisma.Decimal(area.lng),
+    }));
+
+    await this.areasRepository.upsertAreas(areasToSave);
   }
 }
