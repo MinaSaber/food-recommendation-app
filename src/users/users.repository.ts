@@ -2,7 +2,10 @@ import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prsima/prisma.service';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { CreateUserSessionDto } from './dtos/create-user-session.dto';
-import { UserSession } from '../../generated/prisma/client.js';
+import {
+  UserSession,
+  UserSessionStatus,
+} from '../../generated/prisma/client.js';
 
 @Injectable()
 export class UsersRepository {
@@ -42,6 +45,13 @@ export class UsersRepository {
       data: {
         ...createUserSessionDto,
       },
+    });
+  }
+
+  async inactiveUserSession(userId: number) {
+    return this.prisma.userSession.updateMany({
+      where: { userId, status: UserSessionStatus.active },
+      data: { status: UserSessionStatus.inactive },
     });
   }
 }

@@ -1,0 +1,3244 @@
+{
+  "restaurant": {
+    "id": 506073,
+    "name": "Bazooka",
+    "cuisineString": "Fried chicken, Burgers, Chicken",
+    "heroImage": "https://images.deliveryhero.io/image/talabat/restaurants/242833758_8587638847_637838831855471945.jpg?width=750",
+    "logo": "https://images.deliveryhero.io/image/talabat/restaurants/logo_636908346115897419.jpg?width=180",
+    "rate": 3.2,
+    "totalReviews": 0,
+    "totalRatings": 1000,
+    "deliveryFee": "0",
+    "minimumOrderAmount": 0,
+    "avgDeliveryTime": "0 mins",
+    "acceptCreditCard": true,
+    "acceptDebitCard": false,
+    "acceptCash": true,
+    "statusCode": 0,
+    "isTalabatGO": true,
+    "branchName": "Bazooka, Helwan,TGO",
+    "areaName": "Helwan",
+    "areaId": null,
+    "branchId": 702903,
+    "restaurantId": 506073,
+    "deliveryAreaId": null,
+    "deliverySchedule": "",
+    "preOrder": false,
+    "latitude": "29.847079",
+    "longitude": "31.331324",
+    "verticalType": 0,
+    "isGrocery": false,
+    "status": null,
+    "summary": null,
+    "branchSlug": "bazooka-helwan-tgo",
+    "restaurantSlug": "bazooka1",
+    "branchUrl": "/egypt/bazooka1",
+    "isVatInclusive": true,
+    "deliveryChargesType": 0,
+    "altTalabattxt": "VAT",
+    "altMunicipaltxt": "VAT",
+    "altTouristtxt": "",
+    "alternativeDeliveryText": "Delivery fee",
+    "branchLearnMoreLink": "",
+    "IsMigratedToDh": false,
+    "isDarkstore": false,
+    "shopArea": 0,
+    "shopCity": 0,
+    "isCokeRestaurant": true,
+    "isShopSponcered": false,
+    "grlRequired": false,
+    "createdAt": 82082933734,
+    "deliveryTime": 0,
+    "cuisines": [
+      {
+        "id": 1430,
+        "name": "Fried chicken",
+        "slug": ""
+      },
+      {
+        "id": 604,
+        "name": "Burgers",
+        "slug": ""
+      },
+      {
+        "id": 1428,
+        "name": "Chicken",
+        "slug": ""
+      }
+    ],
+    "menuUrl": "/egypt/restaurant/702903/bazooka-helwan-tgo",
+    "view": 0,
+    "promotionText": "",
+    "discountText": "",
+    "isNew": false,
+    "isCateringAvailable": false,
+    "filtersIds": [2037, 2755, 647],
+    "contactlessDelivery": false,
+    "IsProvideTracking": true,
+    "isProvideOrderStatus": true,
+    "shopPosition": 0,
+    "shopType": "TGO",
+    "Sponsored": null,
+    "availablePaymentMethods": [
+      {
+        "logo": "visa_blue.png",
+        "text": "common:visa.translation",
+        "dimension": {
+          "width": 35,
+          "height": 20
+        }
+      },
+      {
+        "logo": "logo-mastercard.svg",
+        "text": "common:mastercard.translation",
+        "dimension": {
+          "width": 33,
+          "height": 20
+        }
+      },
+      {
+        "logo": "logo-cash.svg",
+        "text": "common:cash.translation",
+        "dimension": {
+          "width": 30,
+          "height": 20
+        }
+      }
+    ],
+    "countryId": 9
+  },
+  "items": [
+    {
+      "id": 2319966803,
+      "name": "Flash happiness",
+      "description": "2 Single Sandwiches Chicken or Burger + 2 Fries",
+      "price": 220,
+      "oldPrice": 410,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/6225AC9C8BC90BFE4AE87DA60FCE3AEA?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/6225AC9C8BC90BFE4AE87DA60FCE3AEA",
+      "hasChoices": true,
+      "sectionName": "Picks for you 🔥",
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "fries",
+          "quantity": "2"
+        }
+      ]
+    },
+    {
+      "id": 1048042121,
+      "name": "Medium Coleslaw",
+      "description": "",
+      "price": 35,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/AAC63512522016674E28F89E7B4B5BA7?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/AAC63512522016674E28F89E7B4B5BA7",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": []
+    },
+    {
+      "id": 1048042127,
+      "name": "Extra Bread",
+      "description": ".",
+      "price": 6,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/8749552919DF6A9F796C77180F59EB10?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/8749552919DF6A9F796C77180F59EB10",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": []
+    },
+    {
+      "id": 2391893372,
+      "name": "Flash Offer",
+      "description": "5 pieces of fried chicken without wings + bread",
+      "price": 229,
+      "oldPrice": 399,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/6D552372E133F3878818DA2F8DF701A1?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/6D552372E133F3878818DA2F8DF701A1",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "bread"
+        }
+      ]
+    },
+    {
+      "id": 1048042110,
+      "name": "Fries M",
+      "description": "",
+      "price": 50,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/69CEB3FE36E6B8AF551A22575745BD91?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/69CEB3FE36E6B8AF551A22575745BD91",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042115,
+      "name": "Cheesy Fries",
+      "description": "Medium fries + cheese sauce",
+      "price": 75,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/3968E2BD6A7193071B94664F13A96DF8?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/3968E2BD6A7193071B94664F13A96DF8",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -1,
+      "originalSection": "Picks for you 🔥",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "sauce"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 2391893372,
+      "name": "Flash Offer",
+      "description": "5 pieces of fried chicken without wings + bread",
+      "price": 229,
+      "oldPrice": 399,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/6D552372E133F3878818DA2F8DF701A1?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/6D552372E133F3878818DA2F8DF701A1",
+      "hasChoices": true,
+      "sectionName": "Offers",
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "bread"
+        }
+      ]
+    },
+    {
+      "id": 2319966803,
+      "name": "Flash happiness",
+      "description": "2 Single Sandwiches Chicken or Burger + 2 Fries",
+      "price": 220,
+      "oldPrice": 410,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/6225AC9C8BC90BFE4AE87DA60FCE3AEA?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/6225AC9C8BC90BFE4AE87DA60FCE3AEA",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "fries",
+          "quantity": "2"
+        }
+      ]
+    },
+    {
+      "id": 1604602551,
+      "name": "El A2rmsha Double",
+      "description": "6 pieces of fried chicken + 2 coleslaw + 2 bread + 2 medium basmati rice",
+      "price": 350,
+      "oldPrice": 490,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/2715C3BE07811D6A8FFE155291748CFE?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/2715C3BE07811D6A8FFE155291748CFE",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "bread",
+          "quantity": "2"
+        },
+        {
+          "name": "rice"
+        }
+      ]
+    },
+    {
+      "id": 1604589802,
+      "name": "Share Combo Single",
+      "description": "1 Single beef or chicken sandwich + 1 single beef burger or 1 single chicken burger + 1 Drink + medium fries",
+      "price": 190,
+      "oldPrice": 289,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/C838FD543114F70A5E454023C860167E?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/C838FD543114F70A5E454023C860167E",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604589801,
+      "name": "Zinger Supreme Combo",
+      "description": "Zinger Supreme Sandwich + Combo (Fries + Drink)",
+      "price": 145,
+      "oldPrice": 203,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/3876723C22428895480618E25F940D86?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/3876723C22428895480618E25F940D86",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602381,
+      "name": "Boom Box Single",
+      "description": "Single chicken burger or single beef burger sandwich + 1 chicken piece + medium coleslaw + Drink + 1 cup of rice",
+      "price": 160,
+      "oldPrice": 224,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/CBFCF6F3B50FA4DC3E36D0C53AB35AC9?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/CBFCF6F3B50FA4DC3E36D0C53AB35AC9",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "1"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "rice",
+          "quantity": "1",
+          "unit": "cup"
+        }
+      ]
+    },
+    {
+      "id": 1604602382,
+      "name": "Combo Super Crunchy",
+      "description": "Super Crunchy Sandwich + Combo (Fries + Drink)",
+      "price": 190,
+      "oldPrice": 266,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/0BA7E760058FD94BE296B84F6302A036?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/0BA7E760058FD94BE296B84F6302A036",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602383,
+      "name": "Double Fire Combo",
+      "description": "1 Double Fire Chicken + 1 Medium Fries + 1 Drink",
+      "price": 199,
+      "oldPrice": 279,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/41837F10E6D7C85E5B84F18748D421CB?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/41837F10E6D7C85E5B84F18748D421CB",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602384,
+      "name": "Combo El Sa3ada",
+      "description": "Double beef sandwich or chicken sandwich, served with medium french fries and Drink",
+      "price": 225,
+      "oldPrice": 315,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/AEF5A22284E1FB9FB5B139B4882ECB8F?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/AEF5A22284E1FB9FB5B139B4882ECB8F",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602385,
+      "name": "Melok El Sa3ada 1",
+      "description": "4 chicken pieces of your choice, served with small plain rice, medium coleslaw salad and Drink and bread",
+      "price": 260,
+      "oldPrice": 364,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/757301113E042FE037256AAF868323F4?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/757301113E042FE037256AAF868323F4",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "4"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "rice"
+        }
+      ]
+    },
+    {
+      "id": 1604602386,
+      "name": "Share Combo Double",
+      "description": "1 Double beef or chicken sandwich + 1 double beef burger or 1 double chicken burger + 1 Drink + medium fries",
+      "price": 299,
+      "oldPrice": 419,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/23F6269697AC807D675F1423640D4D24?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/23F6269697AC807D675F1423640D4D24",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602387,
+      "name": "Single El Sa3ada",
+      "description": "2 Single beef or chicken sandwiches + 2 medium fries + 2 drink",
+      "price": 299,
+      "oldPrice": 419,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/1DA74928E6276CAD6D4D186375A917CB?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/1DA74928E6276CAD6D4D186375A917CB",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602388,
+      "name": "Lamet El Sa3ada",
+      "description": "8 chicken pieces of your choice, served with 4 Medium Coleslaw, 4 bread",
+      "price": 435,
+      "oldPrice": 609,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/EE145DF457979A8DD66DFEA1C1E41CCF?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/EE145DF457979A8DD66DFEA1C1E41CCF",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "8"
+        },
+        {
+          "name": "bread",
+          "quantity": "4"
+        }
+      ]
+    },
+    {
+      "id": 1604602389,
+      "name": "Lamet El Sohab",
+      "description": "10 chicken pieces, served with ,3 Medium Coleslaw, 3 bread",
+      "price": 540,
+      "oldPrice": 756,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/4D7E092DB48D47C40CCD95327F2E0C63?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/4D7E092DB48D47C40CCD95327F2E0C63",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "10"
+        },
+        {
+          "name": "bread",
+          "quantity": "3"
+        }
+      ]
+    },
+    {
+      "id": 1604602390,
+      "name": "Rocket El Saada 1",
+      "description": "4 pieces of broast+1Coleslaw Medium+1bread",
+      "price": 220,
+      "oldPrice": 308,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/D3E2D241D581FEB5336BE3A0E8732EB1?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/D3E2D241D581FEB5336BE3A0E8732EB1",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1604602392,
+      "name": "Flash Dinner",
+      "description": "3 pieces of broast + drink + 1 bread",
+      "price": 180,
+      "oldPrice": 252,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/A167078D972D369C0DB3E5DDB2468A9C?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/A167078D972D369C0DB3E5DDB2468A9C",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "bread",
+          "quantity": "1"
+        }
+      ]
+    },
+    {
+      "id": 1604602548,
+      "name": "Rocket El saada 2",
+      "description": "2 beef or chicken wrap sandwiches + 2 fries + 2 drinks",
+      "price": 250,
+      "oldPrice": 350,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/21FE25558C35C339D2A1DA8752ABEF86?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/21FE25558C35C339D2A1DA8752ABEF86",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef",
+          "quantity": "2"
+        },
+        {
+          "name": "wrap"
+        },
+        {
+          "name": "fries",
+          "quantity": "2"
+        }
+      ]
+    },
+    {
+      "id": 1604602549,
+      "name": "Rocket El saada 4",
+      "description": "4 single beef or chicken sandwiches",
+      "price": 399,
+      "oldPrice": 559,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/FBE7F3301124CF5A25412F6D2E65CEEF?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/FBE7F3301124CF5A25412F6D2E65CEEF",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        }
+      ]
+    },
+    {
+      "id": 1604602550,
+      "name": "single combo",
+      "description": "Single beef or chicken sandwich + combo (fries + cola)",
+      "price": 149,
+      "oldPrice": 209,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/E192038AE592E44EB70F7E7DD25A860F?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/E192038AE592E44EB70F7E7DD25A860F",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1622581027,
+      "name": "Double happiness",
+      "description": "2 double sandwiches + 2 medium fries + drink",
+      "price": 450,
+      "oldPrice": 630,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/7872A270AEFE757182CEEBA80EFA3F15?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/7872A270AEFE757182CEEBA80EFA3F15",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1628613772,
+      "name": "Happiness Rocket 3",
+      "description": "9 pieces of broast + 3 coleslaw + 3 bread",
+      "price": 485,
+      "oldPrice": 679,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/E89D8B2D6B44521768D036300A1FAA14?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/E89D8B2D6B44521768D036300A1FAA14",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": -3,
+      "originalSection": "Offers",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "bread",
+          "quantity": "3"
+        }
+      ]
+    },
+    {
+      "id": 2391893372,
+      "name": "Flash Offer",
+      "description": "5 pieces of fried chicken without wings + bread",
+      "price": 229,
+      "oldPrice": 399,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/6D552372E133F3878818DA2F8DF701A1?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/6D552372E133F3878818DA2F8DF701A1",
+      "hasChoices": true,
+      "sectionName": "Up to 40%",
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "bread"
+        }
+      ]
+    },
+    {
+      "id": 2319966803,
+      "name": "Flash happiness",
+      "description": "2 Single Sandwiches Chicken or Burger + 2 Fries",
+      "price": 220,
+      "oldPrice": 410,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/6225AC9C8BC90BFE4AE87DA60FCE3AEA?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/6225AC9C8BC90BFE4AE87DA60FCE3AEA",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "fries",
+          "quantity": "2"
+        }
+      ]
+    },
+    {
+      "id": 2379750906,
+      "name": "Flash Mix",
+      "description": "3 pieces broast + coleslaw + sandwich single or wrap + fries",
+      "price": 260,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/2378ACFF7D94363E74889DEFBA24950E?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/2378ACFF7D94363E74889DEFBA24950E",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "wrap"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 2379751760,
+      "name": "Flash Box",
+      "description": "3 pieces Broast + coleslaw + bread",
+      "price": 145,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/CF3F47F83CC2BD86469160A505BDF6C9?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/CF3F47F83CC2BD86469160A505BDF6C9",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "bread"
+        }
+      ]
+    },
+    {
+      "id": 1604602551,
+      "name": "El A2rmsha Double",
+      "description": "6 pieces of fried chicken + 2 coleslaw + 2 bread + 2 medium basmati rice",
+      "price": 350,
+      "oldPrice": 490,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/2715C3BE07811D6A8FFE155291748CFE?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/2715C3BE07811D6A8FFE155291748CFE",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "bread",
+          "quantity": "2"
+        },
+        {
+          "name": "rice"
+        }
+      ]
+    },
+    {
+      "id": 1604589802,
+      "name": "Share Combo Single",
+      "description": "1 Single beef or chicken sandwich + 1 single beef burger or 1 single chicken burger + 1 Drink + medium fries",
+      "price": 190,
+      "oldPrice": 289,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/C838FD543114F70A5E454023C860167E?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/C838FD543114F70A5E454023C860167E",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604589801,
+      "name": "Zinger Supreme Combo",
+      "description": "Zinger Supreme Sandwich + Combo (Fries + Drink)",
+      "price": 145,
+      "oldPrice": 203,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/3876723C22428895480618E25F940D86?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/3876723C22428895480618E25F940D86",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602381,
+      "name": "Boom Box Single",
+      "description": "Single chicken burger or single beef burger sandwich + 1 chicken piece + medium coleslaw + Drink + 1 cup of rice",
+      "price": 160,
+      "oldPrice": 224,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/CBFCF6F3B50FA4DC3E36D0C53AB35AC9?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/CBFCF6F3B50FA4DC3E36D0C53AB35AC9",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "1"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "rice",
+          "quantity": "1",
+          "unit": "cup"
+        }
+      ]
+    },
+    {
+      "id": 1604602382,
+      "name": "Combo Super Crunchy",
+      "description": "Super Crunchy Sandwich + Combo (Fries + Drink)",
+      "price": 190,
+      "oldPrice": 266,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/0BA7E760058FD94BE296B84F6302A036?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/0BA7E760058FD94BE296B84F6302A036",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602383,
+      "name": "Double Fire Combo",
+      "description": "1 Double Fire Chicken + 1 Medium Fries + 1 Drink",
+      "price": 199,
+      "oldPrice": 279,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/41837F10E6D7C85E5B84F18748D421CB?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/41837F10E6D7C85E5B84F18748D421CB",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602384,
+      "name": "Combo El Sa3ada",
+      "description": "Double beef sandwich or chicken sandwich, served with medium french fries and Drink",
+      "price": 225,
+      "oldPrice": 315,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/AEF5A22284E1FB9FB5B139B4882ECB8F?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/AEF5A22284E1FB9FB5B139B4882ECB8F",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602385,
+      "name": "Melok El Sa3ada 1",
+      "description": "4 chicken pieces of your choice, served with small plain rice, medium coleslaw salad and Drink and bread",
+      "price": 260,
+      "oldPrice": 364,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/757301113E042FE037256AAF868323F4?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/757301113E042FE037256AAF868323F4",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "4"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "rice"
+        }
+      ]
+    },
+    {
+      "id": 1604602386,
+      "name": "Share Combo Double",
+      "description": "1 Double beef or chicken sandwich + 1 double beef burger or 1 double chicken burger + 1 Drink + medium fries",
+      "price": 299,
+      "oldPrice": 419,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/23F6269697AC807D675F1423640D4D24?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/23F6269697AC807D675F1423640D4D24",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602387,
+      "name": "Single El Sa3ada",
+      "description": "2 Single beef or chicken sandwiches + 2 medium fries + 2 drink",
+      "price": 299,
+      "oldPrice": 419,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/1DA74928E6276CAD6D4D186375A917CB?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/1DA74928E6276CAD6D4D186375A917CB",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1604602388,
+      "name": "Lamet El Sa3ada",
+      "description": "8 chicken pieces of your choice, served with 4 Medium Coleslaw, 4 bread",
+      "price": 435,
+      "oldPrice": 609,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/EE145DF457979A8DD66DFEA1C1E41CCF?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/EE145DF457979A8DD66DFEA1C1E41CCF",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "8"
+        },
+        {
+          "name": "bread",
+          "quantity": "4"
+        }
+      ]
+    },
+    {
+      "id": 1604602389,
+      "name": "Lamet El Sohab",
+      "description": "10 chicken pieces, served with ,3 Medium Coleslaw, 3 bread",
+      "price": 540,
+      "oldPrice": 756,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/4D7E092DB48D47C40CCD95327F2E0C63?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/4D7E092DB48D47C40CCD95327F2E0C63",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "10"
+        },
+        {
+          "name": "bread",
+          "quantity": "3"
+        }
+      ]
+    },
+    {
+      "id": 1604602390,
+      "name": "Rocket El Saada 1",
+      "description": "4 pieces of broast+1Coleslaw Medium+1bread",
+      "price": 220,
+      "oldPrice": 308,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/D3E2D241D581FEB5336BE3A0E8732EB1?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/D3E2D241D581FEB5336BE3A0E8732EB1",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1604602392,
+      "name": "Flash Dinner",
+      "description": "3 pieces of broast + drink + 1 bread",
+      "price": 180,
+      "oldPrice": 252,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/A167078D972D369C0DB3E5DDB2468A9C?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/A167078D972D369C0DB3E5DDB2468A9C",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "bread",
+          "quantity": "1"
+        }
+      ]
+    },
+    {
+      "id": 1604602547,
+      "name": "Hormone El Sa3ada",
+      "description": "2 Chicken Pcs+ Rice + Coleslaw Medium + Bread",
+      "price": 155,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/17B37B586CFB16E944AFA71AC3C5E77F?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/17B37B586CFB16E944AFA71AC3C5E77F",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "2"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "rice"
+        }
+      ]
+    },
+    {
+      "id": 1604602548,
+      "name": "Rocket El saada 2",
+      "description": "2 beef or chicken wrap sandwiches + 2 fries + 2 drinks",
+      "price": 250,
+      "oldPrice": 350,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/21FE25558C35C339D2A1DA8752ABEF86?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/21FE25558C35C339D2A1DA8752ABEF86",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef",
+          "quantity": "2"
+        },
+        {
+          "name": "wrap"
+        },
+        {
+          "name": "fries",
+          "quantity": "2"
+        }
+      ]
+    },
+    {
+      "id": 1604602549,
+      "name": "Rocket El saada 4",
+      "description": "4 single beef or chicken sandwiches",
+      "price": 399,
+      "oldPrice": 559,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/FBE7F3301124CF5A25412F6D2E65CEEF?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/FBE7F3301124CF5A25412F6D2E65CEEF",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        }
+      ]
+    },
+    {
+      "id": 1604602550,
+      "name": "single combo",
+      "description": "Single beef or chicken sandwich + combo (fries + cola)",
+      "price": 149,
+      "oldPrice": 209,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/E192038AE592E44EB70F7E7DD25A860F?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/E192038AE592E44EB70F7E7DD25A860F",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1622581027,
+      "name": "Double happiness",
+      "description": "2 double sandwiches + 2 medium fries + drink",
+      "price": 450,
+      "oldPrice": 630,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/7872A270AEFE757182CEEBA80EFA3F15?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/7872A270AEFE757182CEEBA80EFA3F15",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1628613772,
+      "name": "Happiness Rocket 3",
+      "description": "9 pieces of broast + 3 coleslaw + 3 bread",
+      "price": 485,
+      "oldPrice": 679,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/E89D8B2D6B44521768D036300A1FAA14?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/E89D8B2D6B44521768D036300A1FAA14",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": true,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "bread",
+          "quantity": "3"
+        }
+      ]
+    },
+    {
+      "id": 2391803745,
+      "name": "Share happiness",
+      "description": "4 sandwiches (2 single beef burgers + 2 single chicken burgers)",
+      "price": 160,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": null,
+      "originalImage": null,
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 19454502,
+      "originalSection": "Up to 40%",
+      "isItemDiscount": false,
+      "isWithImage": false,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "beef"
+        }
+      ]
+    },
+    {
+      "id": 1048042062,
+      "name": "Bazooka Snack Box Meal",
+      "description": "2 crispy chicken pieces, served with french fries and bread.",
+      "price": 125,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/D9A6268D080BEE32AC85A6C7F3CBD377?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/D9A6268D080BEE32AC85A6C7F3CBD377",
+      "hasChoices": true,
+      "sectionName": "Economical Meals",
+      "sectionId": 18972947,
+      "originalSection": "Economical Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042063,
+      "name": "Bazooka Sniper Meal",
+      "description": "3 crispy chicken pieces served with a medium French fries packet, medium coleslaw salad, and bread loaf",
+      "price": 210,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/3927200C229784A75D23332C27485921?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/3927200C229784A75D23332C27485921",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972947,
+      "originalSection": "Economical Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042064,
+      "name": "Bazooka Crispy Strips Meal",
+      "description": "3 crispy chicken strips pieces, served with french fries, coleslaw salad and bread.",
+      "price": 135,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/D9F3D04EC97C3946B2800384D93D4A57?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/D9F3D04EC97C3946B2800384D93D4A57",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972947,
+      "originalSection": "Economical Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042065,
+      "name": "Bazooka Super Crispy Strips Meal",
+      "description": "5 crispy chicken strips pieces, served with french fries, coleslaw salad and bread.",
+      "price": 210,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/0C35B41A0A3AF0D8A79A50CDA2FB409B?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/0C35B41A0A3AF0D8A79A50CDA2FB409B",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972947,
+      "originalSection": "Economical Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042066,
+      "name": "Bazooka Family Meal 1",
+      "description": "6 chicken pieces, served with family french fries, 2coleslaw salad Medium, Drink liter and 3 bread.",
+      "price": 440,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/8FFC6E281AE70367743E4657FEE2BF4F?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/8FFC6E281AE70367743E4657FEE2BF4F",
+      "hasChoices": true,
+      "sectionName": "Bazooka Family Meals",
+      "sectionId": 18972948,
+      "originalSection": "Bazooka Family Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "6"
+        },
+        {
+          "name": "bread",
+          "quantity": "3"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042067,
+      "name": "Bazooka Family Meal 2",
+      "description": "9 chicken pieces, served with family french fries,4 small coleslaw salad, Drink liter and bread.",
+      "price": 650,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/AE681B04BF11F3DD42E26BFC74722471?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/AE681B04BF11F3DD42E26BFC74722471",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972948,
+      "originalSection": "Bazooka Family Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "9"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042069,
+      "name": "Bazooka Family Meal 4",
+      "description": "12 chicken pieces, served with family french fries,4 small coleslaw salad, Drink liter and 6 Pcs of bread.",
+      "price": 750,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/BA3EA8192276E161A1BE1C2ACB442846?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/BA3EA8192276E161A1BE1C2ACB442846",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972948,
+      "originalSection": "Bazooka Family Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "12"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042070,
+      "name": "Bazooka Family Meal 5",
+      "description": "15 chicken pieces, served with family french fries, 4 small coleslaw salad, Drink liter and bread.",
+      "price": 850,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/DCA85C6487B13498DF498EDD4BED187B?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/DCA85C6487B13498DF498EDD4BED187B",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972948,
+      "originalSection": "Bazooka Family Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "15"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042071,
+      "name": "Bazooka Family Meal 6",
+      "description": "10 chicken strips pieces, 4 small coleslaw salad, large french fries, 4 bread and 1 liter Drink .",
+      "price": 475,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/2F8D60376EB92D5E67D1304E7B83B636?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/2F8D60376EB92D5E67D1304E7B83B636",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972948,
+      "originalSection": "Bazooka Family Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "10"
+        },
+        {
+          "name": "bread",
+          "quantity": "4"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042072,
+      "name": "Bazooka Family Meal 18 Pcs",
+      "description": "18 chicken pieces, served with family french fries, 4 small coleslaw salad, drink liter and 9 bread.",
+      "price": 950,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/88459EE261BE5F1BAFEA203FAE26BB5C?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/88459EE261BE5F1BAFEA203FAE26BB5C",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972948,
+      "originalSection": "Bazooka Family Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "18"
+        },
+        {
+          "name": "bread",
+          "quantity": "9"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042073,
+      "name": "Bazooka Golden Sniper Box",
+      "description": "3 chicken pieces - medium fries - medium coleslaw, 1 bread, 1 Drink",
+      "price": 240,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/493CEBCD615867EA395DB135D128F9C6?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/493CEBCD615867EA395DB135D128F9C6",
+      "hasChoices": true,
+      "sectionName": "Bazooka Meals",
+      "sectionId": 18972949,
+      "originalSection": "Bazooka Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "3"
+        },
+        {
+          "name": "bread",
+          "quantity": "1"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042074,
+      "name": "Bazooka Golden Variety Large Meal",
+      "description": "3 crispy chicken pieces and 2 chicken strips pieces, served with french fries, coleslaw salad, Drink and bread.",
+      "price": 290,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/85A0EB5735E68413538051FC7C2FCD9C?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/85A0EB5735E68413538051FC7C2FCD9C",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972949,
+      "originalSection": "Bazooka Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "2"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042076,
+      "name": "Bazooka Golden Snack Box",
+      "description": "2 chicken pieces - medium fries - medium coleslaw, 1 bread, 1 Drink",
+      "price": 165,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/200F0FCCBAE43DF6E2AFC193AFF49FC0?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/200F0FCCBAE43DF6E2AFC193AFF49FC0",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972949,
+      "originalSection": "Bazooka Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "2"
+        },
+        {
+          "name": "bread",
+          "quantity": "1"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042077,
+      "name": "Bazooka Golden Box",
+      "description": "4 Pieces Chicken + Fries + Coleslaw + Drink + Bread",
+      "price": 290,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/2FE6B011455C43B0170A57F040FD670E?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/2FE6B011455C43B0170A57F040FD670E",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972949,
+      "originalSection": "Bazooka Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "4",
+          "unit": "pieces"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042078,
+      "name": "King Box",
+      "description": "Single sandwich, one piece of chicken, served with French fries, coleslaw and Drink",
+      "price": 225,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/75F8CF09520AE017D1CC234BDE374C4E?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/75F8CF09520AE017D1CC234BDE374C4E",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972949,
+      "originalSection": "Bazooka Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042079,
+      "name": "Wrap Box",
+      "description": "Spicy wrap sandwich or original, 1 Piece of spicy or original chicken, medium slaw, Medium Fries, 1 Drink",
+      "price": 210,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/5779F7BE226CA640B8C0045352A88710?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/5779F7BE226CA640B8C0045352A88710",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972949,
+      "originalSection": "Bazooka Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "wrap"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042081,
+      "name": "Bazooka Kids Meal",
+      "description": "Your Choice of Burger/Chicken Sandwich or 2Chicken Strips Or Piece of chicken Or 4 piece of Mosahab, served with french fries, juice and toy.",
+      "price": 130,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/3B12E91F27428AAA9DA0B16F74376A02?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/3B12E91F27428AAA9DA0B16F74376A02",
+      "hasChoices": true,
+      "sectionName": "Bazooka Kids Meals",
+      "sectionId": 18972950,
+      "originalSection": "Bazooka Kids Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "2"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042082,
+      "name": "Kids Meal",
+      "description": "Your Choice of Burger/Chicken Sandwich or 2Chicken Strips Or Piece of chicken Or 4 piece of Mosahab, served with french fries,Drink .",
+      "price": 99,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/75669201F76EC4C349AB4C90C3E9BA3E?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/75669201F76EC4C349AB4C90C3E9BA3E",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972950,
+      "originalSection": "Bazooka Kids Meals",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "2"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042083,
+      "name": "Bazooka Golden Sniper Box",
+      "description": "3 chicken pieces - medium fries - medium coleslaw, 1 bread, 1 Drink",
+      "price": 240,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/AD570BB74FBBFF61A514CA88AA9DAE3A?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/AD570BB74FBBFF61A514CA88AA9DAE3A",
+      "hasChoices": true,
+      "sectionName": "Bazooka Sandwiches Beef",
+      "sectionId": 18972951,
+      "originalSection": "Bazooka Sandwiches Beef",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "3"
+        },
+        {
+          "name": "bread",
+          "quantity": "1"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042084,
+      "name": "Apache",
+      "description": "Beef burger + mozzarella sticks + cheese slice + mayonnaise sauce + lettuce + pickles + tomatoes + fresh onions",
+      "price": 165,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/F92FD9788810158ACC5042AE1057137C?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/F92FD9788810158ACC5042AE1057137C",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972951,
+      "originalSection": "Bazooka Sandwiches Beef",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "beef"
+        },
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomatoes"
+        },
+        {
+          "name": "onions"
+        },
+        {
+          "name": "pickles"
+        },
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "mozzarella"
+        },
+        {
+          "name": "mayonnaise"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042085,
+      "name": "Jalapeno Bazooka Burger",
+      "description": "Grilled burger, cheddar cheese,spicy BBQ sauce, creamy mayonnaise, jalapeno, lettuce, tomato, onion,",
+      "price": 165,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/21FDB9763E7B16DD3D1805B6B389FEEB?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/21FDB9763E7B16DD3D1805B6B389FEEB",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972951,
+      "originalSection": "Bazooka Sandwiches Beef",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomato"
+        },
+        {
+          "name": "onion"
+        },
+        {
+          "name": "jalapeno"
+        },
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "cheddar"
+        },
+        {
+          "name": "mayonnaise"
+        },
+        {
+          "name": "bbq sauce"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042086,
+      "name": "Big Bazooka",
+      "description": "Grilled burger, creamy crunchy sauce, creamy mayonnaise, cheese sauce, lettuce, tomatoes, onion rings",
+      "price": 165,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/253DEBFECC4661AA0CB8C69415F7D53B?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/253DEBFECC4661AA0CB8C69415F7D53B",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972951,
+      "originalSection": "Bazooka Sandwiches Beef",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomatoes"
+        },
+        {
+          "name": "onion"
+        },
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "mayonnaise"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042089,
+      "name": "Burger wrap",
+      "description": "Grilled burger + Bazooka special sauce + lettuce + tomato + onion + tortilla",
+      "price": 90,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/123FE1DFB4FB7721FA59CE18E407EC7A?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/123FE1DFB4FB7721FA59CE18E407EC7A",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972951,
+      "originalSection": "Bazooka Sandwiches Beef",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomato"
+        },
+        {
+          "name": "onion"
+        },
+        {
+          "name": "tortilla"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042090,
+      "name": "Chicken Fire Bazooka",
+      "description": "Spicy zinger, spicy sauce, lettuce, tomato and melted cheese",
+      "price": 185,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/74B5CF41D8E5E636AD4484DDA445D6E4?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/74B5CF41D8E5E636AD4484DDA445D6E4",
+      "hasChoices": true,
+      "sectionName": "Bazooka Sandwiches Chicken",
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomato"
+        },
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042091,
+      "name": "Fire Super Bazooka",
+      "description": "Spicy chicken piece + smoked turkey + American cheese slice + hot chili sauce + lettuce + tomatoes",
+      "price": 125,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/F6082D71B40C95A6A62CE5892A5B8218?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/F6082D71B40C95A6A62CE5892A5B8218",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "turkey"
+        },
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomatoes"
+        },
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "sauce"
+        },
+        {
+          "name": "chili"
+        }
+      ]
+    },
+    {
+      "id": 1048042092,
+      "name": "Big Fire Bazooka",
+      "description": "Spicy crispy chicken breasts + cheese slice + smoked turkey + jalapeno pepper pieces + chili sauce + lettuce + tomatoes",
+      "price": 175,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/175FA7BD6C296D87127E7938AD0AA3D2?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/175FA7BD6C296D87127E7938AD0AA3D2",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "turkey"
+        },
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomatoes"
+        },
+        {
+          "name": "pepper"
+        },
+        {
+          "name": "jalapeno"
+        },
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "sauce"
+        },
+        {
+          "name": "chili"
+        }
+      ]
+    },
+    {
+      "id": 1447616123,
+      "name": "CHICKEN BOMB Double",
+      "description": "Double Bomb Sandwich (Caesar or Ranch or Spicy Poppers)",
+      "price": 180,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/3217C67B2CD954923EADBF358DB1C9D8?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/3217C67B2CD954923EADBF358DB1C9D8",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "ranch"
+        }
+      ]
+    },
+    {
+      "id": 1048042094,
+      "name": "Chicken BBQ",
+      "description": "Crispy chicken breasts, with BBQ sauce, melted cheese sauce, lettuce, tomatoes, pickled cucumbers, mayonnaise",
+      "price": 145,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/9919A2155F0F8B5D71B3AF8BACE58F88?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/9919A2155F0F8B5D71B3AF8BACE58F88",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomatoes"
+        },
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "mayonnaise"
+        },
+        {
+          "name": "bbq sauce"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042095,
+      "name": "Chicken Turky",
+      "description": "Crispy smoked turkey chicken breasts, melted cheese sauce, onion rings, lettuce, tomato, pickled cucumber, mayonnaise",
+      "price": 145,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/9293F12B2D313C756E51BF62065C58EA?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/9293F12B2D313C756E51BF62065C58EA",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "turkey"
+        },
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomato"
+        },
+        {
+          "name": "onion"
+        },
+        {
+          "name": "cucumber"
+        },
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "mayonnaise"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042096,
+      "name": "Chicken Ranch",
+      "description": "Crispy chicken breasts, ranch sauce, mozzarella sticks, lettuce, tomato, pickled cucumber, mayonnaise",
+      "price": 145,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/0C41DA4FB01FA1FEF969B402946572A5?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/0C41DA4FB01FA1FEF969B402946572A5",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomato"
+        },
+        {
+          "name": "cucumber"
+        },
+        {
+          "name": "mozzarella"
+        },
+        {
+          "name": "mayonnaise"
+        },
+        {
+          "name": "ranch"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042097,
+      "name": "Jalebino Chicken",
+      "description": "Crispy chicken breasts, spicy BBQ sauce, melted cheese sauce, jalapeno, lettuce, tomatoes, pickled cucumbers, mayonnaise",
+      "price": 145,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/F5EFCE1ECF9B5C0F0605B041118B88F3?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/F5EFCE1ECF9B5C0F0605B041118B88F3",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "lettuce"
+        },
+        {
+          "name": "tomatoes"
+        },
+        {
+          "name": "jalapeno"
+        },
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "mayonnaise"
+        },
+        {
+          "name": "bbq sauce"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042099,
+      "name": "Crunchy Chicken Wrap",
+      "description": "Chicken Strips, Mayo Sauce, Lettus, Tomato, and Tortilla Bread",
+      "price": 99,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/5CC00A5FAC0DABF00215DBF0D2514C83?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/5CC00A5FAC0DABF00215DBF0D2514C83",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "tomato"
+        },
+        {
+          "name": "bread"
+        },
+        {
+          "name": "tortilla"
+        },
+        {
+          "name": "mayo"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1403886476,
+      "name": "Wrap Mashab",
+      "description": "",
+      "price": 99,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/B021ACAF3A7CA3FE7F2AC99457F9A2F0?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/B021ACAF3A7CA3FE7F2AC99457F9A2F0",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1849117968,
+      "name": "Fahita Wrap",
+      "description": "Grilled chicken breast + onions + colored peppers + BBQ sauce + sweet chili sauce + San George sauce",
+      "price": 99,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/65D56D5BAC8ACE3F524968DEA3454CC0?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/65D56D5BAC8ACE3F524968DEA3454CC0",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972952,
+      "originalSection": "Bazooka Sandwiches Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "onions"
+        },
+        {
+          "name": "peppers"
+        },
+        {
+          "name": "bbq sauce"
+        },
+        {
+          "name": "sauce"
+        },
+        {
+          "name": "chili"
+        }
+      ]
+    },
+    {
+      "id": 1048042105,
+      "name": "Mosahab El Sa3ada 7 Pcs",
+      "description": "7 Pieces Chicken + 2 Sauces + 1 Bread + Fries",
+      "price": 175,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/C4015130CBEF9634740334F88B637AB9?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/C4015130CBEF9634740334F88B637AB9",
+      "hasChoices": true,
+      "sectionName": "Mosahab",
+      "sectionId": 18972953,
+      "originalSection": "Mosahab",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "7",
+          "unit": "pieces"
+        },
+        {
+          "name": "bread",
+          "quantity": "1"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042106,
+      "name": "Mosahab El Sa3ada 10 Pcs",
+      "description": "10 Pieces Chicken + 2 Sauces + 2 Bread + Fries",
+      "price": 210,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/4AE703C545211EA452AE69F0C1479BBC?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/4AE703C545211EA452AE69F0C1479BBC",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972953,
+      "originalSection": "Mosahab",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "10",
+          "unit": "pieces"
+        },
+        {
+          "name": "bread",
+          "quantity": "2"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042107,
+      "name": "Mosahab 14 Pcs",
+      "description": "14 Pieces Chicken + 2 Sauces + 2 Bread + Fries",
+      "price": 260,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/A59658D1300BC7D8717A3E7DBCCD2AC5?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/A59658D1300BC7D8717A3E7DBCCD2AC5",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972953,
+      "originalSection": "Mosahab",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "chicken",
+          "quantity": "14",
+          "unit": "pieces"
+        },
+        {
+          "name": "bread",
+          "quantity": "2"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042108,
+      "name": "Medium Combo",
+      "description": "Medium fries + Drink",
+      "price": 60,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/4965EF3EB8CF7128FD1C35C637C080C3?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/4965EF3EB8CF7128FD1C35C637C080C3",
+      "hasChoices": true,
+      "sectionName": "Combos",
+      "sectionId": 18972954,
+      "originalSection": "Combos",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1400911782,
+      "name": "Fattah Offer",
+      "description": "Broast fattah + boneless fattah + fattah strips + 3 sauce",
+      "price": 360,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/A85BAFBA91A869EF63EC0053B32220F8?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/A85BAFBA91A869EF63EC0053B32220F8",
+      "hasChoices": true,
+      "sectionName": "Funkoosh Fried Chicken",
+      "sectionId": 18974163,
+      "originalSection": "Funkoosh Fried Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "sauce",
+          "quantity": "3"
+        }
+      ]
+    },
+    {
+      "id": 1400911783,
+      "name": "Koshary Offer",
+      "description": "3 koshary",
+      "price": 320,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/22D626DE8CFE5E70D85FCB4FE6D589F7?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/22D626DE8CFE5E70D85FCB4FE6D589F7",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18974163,
+      "originalSection": "Funkoosh Fried Chicken",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042109,
+      "name": "Extra Chicken Piece",
+      "description": "",
+      "price": 80,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/613D521B4925994EA381A814C4644985?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/613D521B4925994EA381A814C4644985",
+      "hasChoices": true,
+      "sectionName": "Appetizers",
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042110,
+      "name": "Fries M",
+      "description": "",
+      "price": 50,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/69CEB3FE36E6B8AF551A22575745BD91?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/69CEB3FE36E6B8AF551A22575745BD91",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": []
+    },
+    {
+      "id": 1048042111,
+      "name": "Fries F",
+      "description": "",
+      "price": 80,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/989D609E7BABF05B56153E3553297F8C?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/989D609E7BABF05B56153E3553297F8C",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042112,
+      "name": "Cheese Jar",
+      "description": "",
+      "price": 95,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/4122DC978676996597E360034EBFFA0B?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/4122DC978676996597E360034EBFFA0B",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": []
+    },
+    {
+      "id": 1048042113,
+      "name": "Jalapeno Cheesy Fries",
+      "description": "jalapeno, french fries and sauce.",
+      "price": 80,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/E439A652BAE44AA6AE5A9FE048662266?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/E439A652BAE44AA6AE5A9FE048662266",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "jalapeno"
+        },
+        {
+          "name": "sauce"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042114,
+      "name": "Extra Chicken Fillet Piece",
+      "description": "",
+      "price": 80,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/54A2A6B415E156D6B459D66D44ABE2A9?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/54A2A6B415E156D6B459D66D44ABE2A9",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042115,
+      "name": "Cheesy Fries",
+      "description": "Medium fries + cheese sauce",
+      "price": 75,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/3968E2BD6A7193071B94664F13A96DF8?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/3968E2BD6A7193071B94664F13A96DF8",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "cheese"
+        },
+        {
+          "name": "sauce"
+        },
+        {
+          "name": "fries"
+        }
+      ]
+    },
+    {
+      "id": 1048042117,
+      "name": "Onion Rings",
+      "description": "3 rings.",
+      "price": 35,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/3DCD210C94C31833E9D9E4A555742D89?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/3DCD210C94C31833E9D9E4A555742D89",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042119,
+      "name": "Rizo",
+      "description": "Rizo, chicken pieces and sauce.",
+      "price": 95,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/FF80A098865838A45200BD6C0297299F?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/FF80A098865838A45200BD6C0297299F",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "chicken"
+        },
+        {
+          "name": "sauce"
+        }
+      ]
+    },
+    {
+      "id": 1048042120,
+      "name": "Extra Chicken Strips Piece",
+      "description": "",
+      "price": 60,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/64780087C5A288998C7FF791D3F6D303?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/64780087C5A288998C7FF791D3F6D303",
+      "hasChoices": true,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1403886477,
+      "name": "Medium Cheese Jar",
+      "description": "",
+      "price": 65,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/39F0D24D38B8708BD64F5354EC42821C?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/39F0D24D38B8708BD64F5354EC42821C",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1849117969,
+      "name": "Mexican Rizo",
+      "description": "Rice + Fahita",
+      "price": 95,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/52769AB922B27BF1514B8E5127418C1C?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/52769AB922B27BF1514B8E5127418C1C",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972955,
+      "originalSection": "Appetizers",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": [
+        {
+          "name": "rice"
+        }
+      ]
+    },
+    {
+      "id": 1048042121,
+      "name": "Medium Coleslaw",
+      "description": "",
+      "price": 35,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/AAC63512522016674E28F89E7B4B5BA7?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/AAC63512522016674E28F89E7B4B5BA7",
+      "hasChoices": false,
+      "sectionName": "Salads",
+      "sectionId": 18972956,
+      "originalSection": "Salads",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": []
+    },
+    {
+      "id": 1048042122,
+      "name": "Extra Rice",
+      "description": "Rice Small",
+      "price": 45,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/721341BDC150870BD3E56372BDF4DC1C?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/721341BDC150870BD3E56372BDF4DC1C",
+      "hasChoices": false,
+      "sectionName": "Extras",
+      "sectionId": 18972957,
+      "originalSection": "Extras",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": [
+        {
+          "name": "rice"
+        }
+      ]
+    },
+    {
+      "id": 1048042124,
+      "name": "Extra Mayonnaise",
+      "description": ".",
+      "price": 30,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/A6120C34AFDDC82FC9900BBDE1237206?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/A6120C34AFDDC82FC9900BBDE1237206",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972957,
+      "originalSection": "Extras",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042125,
+      "name": "Extra Jalapeno",
+      "description": ".",
+      "price": 30,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/B69E5E301CDC67E28C31909E2B2E4D80?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/B69E5E301CDC67E28C31909E2B2E4D80",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972957,
+      "originalSection": "Extras",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042126,
+      "name": "Extra Smoked Turkey",
+      "description": "",
+      "price": 30,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/0389C1C955253B0BCD0A3926D621C16F?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/0389C1C955253B0BCD0A3926D621C16F",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972957,
+      "originalSection": "Extras",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042127,
+      "name": "Extra Bread",
+      "description": ".",
+      "price": 6,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/8749552919DF6A9F796C77180F59EB10?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/8749552919DF6A9F796C77180F59EB10",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972957,
+      "originalSection": "Extras",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": []
+    },
+    {
+      "id": 1403886478,
+      "name": "Medium Basmati Rice",
+      "description": "",
+      "price": 45,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/E0DB7FAF2CB1F88C05993B80C2C78FDA?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/E0DB7FAF2CB1F88C05993B80C2C78FDA",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972957,
+      "originalSection": "Extras",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1403886479,
+      "name": "Large Basmati Rice",
+      "description": "",
+      "price": 60,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/4C706A7B74E6DABB37453D42E26ECCDF?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/4C706A7B74E6DABB37453D42E26ECCDF",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972957,
+      "originalSection": "Extras",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042129,
+      "name": "Pepper Mayonnaise Sauce",
+      "description": ".",
+      "price": 30,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/3F99552690C1569D71C9AC1A4FC91B82?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/3F99552690C1569D71C9AC1A4FC91B82",
+      "hasChoices": false,
+      "sectionName": "Sauces",
+      "sectionId": 18972958,
+      "originalSection": "Sauces",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042130,
+      "name": "Ranch Sauce",
+      "description": ".",
+      "price": 35,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/36E09171876A384775D4051672BF6743?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/36E09171876A384775D4051672BF6743",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972958,
+      "originalSection": "Sauces",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": []
+    },
+    {
+      "id": 1048042131,
+      "name": "Bazooka Sauce",
+      "description": ".",
+      "price": 35,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/AF4F00D74172CE6A711564CF53F3CC52?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/AF4F00D74172CE6A711564CF53F3CC52",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972958,
+      "originalSection": "Sauces",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": []
+    },
+    {
+      "id": 1048042132,
+      "name": "Chili Sauce",
+      "description": ".",
+      "price": 30,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/436CDBBE0887F1F3130FDD60058508E7?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/436CDBBE0887F1F3130FDD60058508E7",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972958,
+      "originalSection": "Sauces",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042133,
+      "name": "BBQ Sauce",
+      "description": ".",
+      "price": 30,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/04EB655FEEC53520406D467DDAA2D771?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/04EB655FEEC53520406D467DDAA2D771",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972958,
+      "originalSection": "Sauces",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1107869230,
+      "name": "Cheddar Sauce Packet",
+      "description": "",
+      "price": 10,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/24720C71376D78FE3B80FD34C14FEC4D?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/24720C71376D78FE3B80FD34C14FEC4D",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972958,
+      "originalSection": "Sauces",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    },
+    {
+      "id": 1048042135,
+      "name": "Small Mineral Water",
+      "description": ".",
+      "price": 15,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/CB1806872BDE682410C056EA180E28AF?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/CB1806872BDE682410C056EA180E28AF",
+      "hasChoices": false,
+      "sectionName": "Beverages",
+      "sectionId": 18972959,
+      "originalSection": "Beverages",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": true,
+      "ingredients": []
+    },
+    {
+      "id": 1048042136,
+      "name": "Juice Small",
+      "description": ".",
+      "price": 29,
+      "oldPrice": -1,
+      "rating": 0,
+      "image": "https://images.deliveryhero.io/image/talabat/MenuItems/47A9F6841F4AA5B9B0CE38CCFDFF85F9?width=172&amp;height=172",
+      "originalImage": "https://images.deliveryhero.io/image/talabat/MenuItems/47A9F6841F4AA5B9B0CE38CCFDFF85F9",
+      "hasChoices": false,
+      "sectionName": null,
+      "sectionId": 18972959,
+      "originalSection": "Beverages",
+      "isItemDiscount": false,
+      "isWithImage": true,
+      "isTopRatedItem": false,
+      "ingredients": []
+    }
+  ]
+}

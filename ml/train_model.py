@@ -101,6 +101,7 @@ log("Building dataset and extracting features...")
 dataset = Dataset()
 
 all_item_features = set()
+all_user_features = set()
 
 for _, row in food_df.iterrows():
     # Add category
@@ -108,11 +109,49 @@ for _, row in food_df.iterrows():
     # Add ingredients
     for ing in row["ingredients"]:
         all_item_features.add(f"ingredient:{ing}")
-    # Add coarse rating bucket (optional)
-    # rating_bucket = int(row["rating"])
-    # all_item_features.add(f"rating:{rating_bucket}")
 
 log(f"✓ Extracted {len(all_item_features)} unique item features")
+
+# Extract user features
+for _, row in users_df.iterrows():
+    # Add dietary preferences
+    prefs = row.get("dietary_preferences")
+    if prefs is not None and not (isinstance(prefs, float) and pd.isna(prefs)):
+        if isinstance(prefs, list) and len(prefs) > 0:
+            for pref in prefs:
+                all_user_features.add(f"dietary:{pref}")
+        elif isinstance(prefs, str) and prefs:
+            all_user_features.add(f"dietary:{prefs}")
+    
+    # Add budget preference
+    budget = row.get("budget_preference")
+    if budget is not None and not (isinstance(budget, float) and pd.isna(budget)):
+        all_user_features.add(f"budget:{budget}")
+    
+    # Add gender
+    gender = row.get("gender")
+    if gender is not None and not (isinstance(gender, float) and pd.isna(gender)):
+        all_user_features.add(f"gender:{gender}")
+    
+    # Add age bucket (group ages into ranges)
+    age_val = row.get("age")
+    if age_val is not None and not (isinstance(age_val, float) and pd.isna(age_val)):
+        try:
+            age = int(age_val)
+            if age < 25:
+                all_user_features.add("age:18-24")
+            elif age < 35:
+                all_user_features.add("age:25-34")
+            elif age < 45:
+                all_user_features.add("age:35-44")
+            elif age < 55:
+                all_user_features.add("age:45-54")
+            else:
+                all_user_features.add("age:55+")
+        except (ValueError, TypeError):
+            pass
+
+log(f"✓ Extracted {len(all_user_features)} unique user features")
 
 unique_users = users_df["id"].astype(str).unique()
 unique_items = food_df["id"].astype(str).unique()
@@ -123,7 +162,8 @@ log(f"✓ Found {len(unique_items)} unique items")
 dataset.fit(
     users=unique_users,
     items=unique_items,
-    item_features=list(all_item_features)
+    item_features=list(all_item_features),
+    user_features=list(all_user_features)  # Add user features
 )
 log("✓ Dataset fitted successfully")
 
@@ -133,11 +173,57 @@ item_features = dataset.build_item_features([
         str(row["id"]),
         [f"category:{row['category']}"]
         + [f"ingredient:{ing}" for ing in row["ingredients"]]
-        # + [f"rating:{int(row['rating'])}"]
     )
     for _, row in food_df.iterrows()
 ])
 log("✓ Item features matrix built")
+
+# Build user features matrix
+log("Building user features matrix...")
+user_features_list = []
+for _, row in users_df.iterrows():
+    features = []
+    
+    # Add dietary preferences
+    prefs = row.get("dietary_preferences")
+    if prefs is not None and not (isinstance(prefs, float) and pd.isna(prefs)):
+        if isinstance(prefs, list) and len(prefs) > 0:
+            features.extend([f"dietary:{pref}" for pref in prefs])
+        elif isinstance(prefs, str) and prefs:
+            features.append(f"dietary:{prefs}")
+    
+    # Add budget preference
+    budget = row.get("budget_preference")
+    if budget is not None and not (isinstance(budget, float) and pd.isna(budget)):
+        features.append(f"budget:{budget}")
+    
+    # Add gender
+    gender = row.get("gender")
+    if gender is not None and not (isinstance(gender, float) and pd.isna(gender)):
+        features.append(f"gender:{gender}")
+    
+    # Add age bucket
+    age_val = row.get("age")
+    if age_val is not None and not (isinstance(age_val, float) and pd.isna(age_val)):
+        try:
+            age = int(age_val)
+            if age < 25:
+                features.append("age:18-24")
+            elif age < 35:
+                features.append("age:25-34")
+            elif age < 45:
+                features.append("age:35-44")
+            elif age < 55:
+                features.append("age:45-54")
+            else:
+                features.append("age:55+")
+        except (ValueError, TypeError):
+            pass
+    
+    user_features_list.append((str(row["id"]), features))
+
+user_features = dataset.build_user_features(user_features_list)
+log("✓ User features matrix built")
 
 # Filter events to only include item_ids that exist in food_df
 log("Processing interactions...")
@@ -204,7 +290,14 @@ start_time = datetime.now()
 model = LightFM(loss="warp", random_state=42, learning_rate=0.05, no_components=30, max_sampled=10)
 
 try:
-    model.fit(interactions, item_features=item_features, sample_weight=weights, epochs=30, num_threads=4)
+    model.fit(
+        interactions, 
+        item_features=item_features,
+        user_features=user_features,  # Add user features
+        sample_weight=weights, 
+        epochs=30, 
+        num_threads=4
+    )
 except Exception as e:
     log_error(f"❌ Error during model training: {str(e)}")
     sys.exit(1)

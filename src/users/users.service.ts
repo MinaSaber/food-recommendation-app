@@ -44,4 +44,12 @@ export class UsersService {
 
     return this.usersRepository.createUserSession(createUserSessionDto);
   }
+
+  async inactiveUserSession(userId: number) {
+    await this.usersRepository.inactiveUserSession(userId);
+    return {
+      success: true,
+      message: 'Logged out successfully',
+    };
+  }
 }

@@ -3,10 +3,18 @@ import { AuthService } from './auth.service';
 import { LoginDto } from './dtos/login.dto';
 import { VerifyOtpDto } from './dtos/verify-otp.dto';
 import { Public } from '../shared/decorators/public.decorator';
+import {
+  CurrentUser,
+  CurrentUserPayload,
+} from '@/shared/decorators/current-user.decorator';
+import { UsersService } from '@/users/users.service';
 
 @Controller('auth')
 export class AuthController {
-  constructor(private readonly authService: AuthService) {}
+  constructor(
+    private readonly authService: AuthService,
+    private readonly usersService: UsersService,
+  ) {}
 
   @Public()
   @Post('login')
@@ -15,11 +23,16 @@ export class AuthController {
   }
 
   @Public()
-  @Post('verify-otp')
+  @Post('otp/verify')
   async verifyOtp(@Body() verifyOtpDto: VerifyOtpDto) {
     return this.authService.verifyOtp(
       verifyOtpDto.phoneNumber,
       verifyOtpDto.otp,
     );
+  }
+
+  @Post('logout')
+  async logout(@CurrentUser() user: CurrentUserPayload) {
+    return this.usersService.inactiveUserSession(user.id);
   }
 }

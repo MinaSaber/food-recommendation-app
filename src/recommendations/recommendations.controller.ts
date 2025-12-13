@@ -1,6 +1,10 @@
 import { RecommendationsService } from './recommendations.service';
 import { Controller, Get, Param, Post } from '@nestjs/common';
 import { Public } from '@/shared/decorators/public.decorator';
+import {
+  CurrentUser,
+  CurrentUserPayload,
+} from '@/shared/decorators/current-user.decorator';
 
 @Controller('recommendations')
 export class RecommendationsController {
@@ -14,14 +18,13 @@ export class RecommendationsController {
     return this.recommendationsService.trainModel();
   }
 
-  @Public()
-  @Get('user/:userId/restaurant/:restaurantId')
+  @Get('restaurant/:restaurantId')
   async getRecommendationsForUser(
-    @Param('userId') userId: number,
+    @CurrentUser() user: CurrentUserPayload,
     @Param('restaurantId') restaurantId: number,
   ) {
     return this.recommendationsService.getRecommendationsForUser(
-      userId,
+      user,
       restaurantId,
     );
   }

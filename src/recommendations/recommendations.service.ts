@@ -3,10 +3,15 @@ import { spawn } from 'child_process';
 import * as path from 'path';
 import * as fs from 'fs';
 import { FoodItemsService } from '../food-items/food-items.service';
+import { CurrentUserPayload } from '@/shared/decorators/current-user.decorator';
+import { PrismaService } from '../prsima/prisma.service';
 
 @Injectable()
 export class RecommendationsService {
-  constructor(private readonly foodItemsService: FoodItemsService) {}
+  constructor(
+    private readonly foodItemsService: FoodItemsService,
+    private readonly prisma: PrismaService,
+  ) {}
 
   async trainModel() {
     const scriptPath = path.join(process.cwd(), 'ml/train_model.py');
@@ -49,43 +54,113 @@ export class RecommendationsService {
     });
   }
 
-  async getRecommendationsForUser(userId: number, restaurantId: number) {
-    const trainingUsersPath = path.join(process.cwd(), 'training_users.json');
-    const users = JSON.parse(fs.readFileSync(trainingUsersPath, 'utf-8'));
-    const user = users.find((u: { id: number }) => u.id === userId);
+  async getRecommendationsForUser(
+    user: CurrentUserPayload,
+    restaurantId: number,
+  ) {
+    // Fetch full user data from database to get dietary preferences and other features
+    const dbUser = await this.prisma.user.findUnique({
+      where: { id: user.id },
+      select: {
+        id: true,
+        dietaryPreferences: true,
+        budgetPreference: true,
+        gender: true,
+        age: true,
+      },
+    });
 
-    if (!user) {
-      throw new Error(
-        `User with ID ${userId} not found in training_users.json`,
-      );
+    if (!dbUser) {
+      throw new Error(`User with ID ${user.id} not found in database`);
     }
 
-    // Fetch restaurant food items
-    // const foodItems =
-    //   await this.foodItemsService.getFoodItemsForRestaurant(restaurantId);
-    // if (!foodItems || foodItems.length === 0) return [];
+    // Check if user exists in training data
+    const trainingUsersPath = path.join(process.cwd(), 'training_users.json');
+    let trainingUser: any = null;
+    let userIdArg: string;
+    let userFeaturesArg: string;
 
-    const foodItems = [
-      {
-        id: 1,
-        restaurant_id: 1,
-        name: 'Kung Pao Chicken',
-        description: 'Spicy stir-fried chicken with peanuts and vegetables',
-        category: 'Main Course',
-        price: 16.99,
-        ingredients: [
-          'chicken',
-          'peanuts',
-          'bell peppers',
-          'chili',
-          'soy sauce',
-          'ginger',
-          'garlic',
-        ],
-        image_url: 'https://images.unsplash.com/photo-1563245372-f21724e3856d',
-        rating: 4.5,
+    if (fs.existsSync(trainingUsersPath)) {
+      const users = JSON.parse(fs.readFileSync(trainingUsersPath, 'utf-8'));
+      trainingUser = users.find((u: { id: number }) => u.id === user.id);
+    }
+
+    // Fetch user's past interactions to extract preferred ingredients
+    const userEvents = await this.prisma.event.findMany({
+      where: { userId: user.id },
+      include: {
+        foodItem: {
+          select: {
+            ingredients: true,
+          },
+        },
       },
-    ];
+      orderBy: {
+        createdAt: 'desc',
+      },
+      // take: 100, // Get last 100 interactions
+    });
+
+    // Extract unique ingredients from items user interacted with
+    const preferredIngredients = new Set<string>();
+    userEvents.forEach((event) => {
+      if (event.foodItem?.ingredients) {
+        event.foodItem.ingredients.forEach((ingredient) => {
+          if (typeof ingredient === 'string') {
+            preferredIngredients.add(ingredient.toLowerCase());
+          }
+        });
+      }
+    });
+
+    // Prepare user features from database user
+    const userFeatures: {
+      dietary_preferences?: string[];
+      budget_preference?: string;
+      gender?: string;
+      age?: number;
+      preferred_ingredients?: string[];
+    } = {};
+
+    if (dbUser.dietaryPreferences) {
+      if (Array.isArray(dbUser.dietaryPreferences)) {
+        userFeatures.dietary_preferences = dbUser.dietaryPreferences.filter(
+          (pref): pref is string => typeof pref === 'string',
+        );
+      } else if (typeof dbUser.dietaryPreferences === 'string') {
+        userFeatures.dietary_preferences = [dbUser.dietaryPreferences];
+      }
+    }
+
+    if (dbUser.budgetPreference) {
+      userFeatures.budget_preference = dbUser.budgetPreference;
+    }
+
+    if (dbUser.gender) {
+      userFeatures.gender = dbUser.gender.toLowerCase();
+    }
+
+    if (dbUser.age) {
+      userFeatures.age = dbUser.age;
+    }
+
+    // Add preferred ingredients from past interactions
+    if (preferredIngredients.size > 0) {
+      userFeatures.preferred_ingredients = Array.from(preferredIngredients);
+    }
+
+    // Always pass user features for content-based scoring (needed for items not in training data)
+    if (trainingUser) {
+      userIdArg = String(trainingUser.id);
+    } else {
+      userIdArg = 'null';
+    }
+    // Always pass user features for content-based scoring
+    userFeaturesArg = JSON.stringify(userFeatures);
+
+    const foodItems =
+      await this.foodItemsService.getFoodItemsForRestaurant(restaurantId);
+    if (!foodItems || foodItems.length === 0) return [];
 
     // Run the Python script to get predictions
     const scriptPath = path.join(process.cwd(), 'ml', 'predict.py');
@@ -106,8 +181,9 @@ export class RecommendationsService {
     return new Promise((resolve, reject) => {
       const process = spawn(pythonExecutable, [
         scriptPath,
-        String(userId),
+        userIdArg,
         itemsJson,
+        userFeaturesArg,
       ]);
 
       let result = '';
@@ -129,7 +205,7 @@ export class RecommendationsService {
             (a: any, b: any) => b.predicted_score - a.predicted_score,
           );
           resolve(sorted);
-        } catch (err) {
+        } catch (err: any) {
           reject(
             new Error(`Failed to parse prediction result: ${err.message}`),
           );
