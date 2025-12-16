@@ -12,6 +12,7 @@ import { TalModule } from './external/providers/tal/tal.module';
 import { RecommendationsModule } from './recommendations/recommendations.module';
 import { JwtGuard } from './shared/guards/jwt.guard';
 import { RestaurantsModule } from './restaurants/restaurants.module';
+import { RestaurantRecommendationsModule } from './restaurants/restaurant-recommendations.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { RestaurantsModule } from './restaurants/restaurants.module';
     AreasModule,
     RecommendationsModule,
     RestaurantsModule,
+    RestaurantRecommendationsModule,
   ],
   controllers: [AppController],
   providers: [

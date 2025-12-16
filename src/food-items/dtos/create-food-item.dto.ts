@@ -3,6 +3,7 @@ import {
   IsDecimal,
   IsNotEmpty,
   IsNumber,
+  IsOptional,
   IsString,
 } from 'class-validator';
 
@@ -18,6 +19,14 @@ export class CreateFoodItemDto {
   @IsString()
   @IsNotEmpty()
   description: string;
+
+  @IsString()
+  @IsOptional()
+  category?: string;
+
+  @IsArray()
+  @IsOptional()
+  tags?: string[];
 
   @IsDecimal()
   @IsNotEmpty()

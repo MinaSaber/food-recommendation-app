@@ -45,64 +45,75 @@ export class FoodItemsService {
       sections: [],
     };
 
-    const result = {
-      restaurant: data?.pageProps?.initialMenuState?.restaurant ?? {},
-      items:
-        menu.items?.map((item) => ({
-          ...item,
-          ingredients: this.ingredientExtractionService.extractIngredients(
-            item.description,
-          ),
-        })) ?? [],
-    };
+    return data;
+    // const { name, longitude, latitude } = result.restaurant;
 
-    const { name, longitude, latitude } = result.restaurant;
+    // const restaurantFromDatabase =
+    //   await this.restaurantsService.getRestaurantByNameAndLocation(
+    //     name,
+    //     longitude,
+    //     latitude,
+    //   );
 
-    const restaurantFromDatabase =
-      await this.restaurantsService.getRestaurantByNameAndLocation(
-        name,
-        longitude,
-        latitude,
-      );
+    // if (!restaurantFromDatabase) {
+    //   throw new NotFoundException('Restaurant not found');
+    // }
 
-    if (!restaurantFromDatabase) {
-      throw new NotFoundException('Restaurant not found');
-    }
+    // const existingFoodItems =
+    //   await this.foodItemsRepository.getFoodItemsByRestaurantId(
+    //     restaurantFromDatabase.id,
+    //   );
 
-    const existingFoodItems =
-      await this.foodItemsRepository.getFoodItemsByRestaurantId(
-        restaurantFromDatabase.id,
-      );
+    // const existingSet = new Set(
+    //   existingFoodItems.map(
+    //     (r) => `${r.name.toLowerCase()}-${r.description.toLowerCase()}`,
+    //   ),
+    // );
 
-    const existingSet = new Set(
-      existingFoodItems.map(
-        (r) => `${r.name.toLowerCase()}-${r.description.toLowerCase()}`,
-      ),
-    );
+    // const newFoodItems = result.items.filter((item) => {
+    //   const key = `${item.name.toLowerCase()}-${item.description.toLowerCase()}`;
+    //   return !existingSet.has(key);
+    // });
 
-    const newFoodItems = result.items.filter((item) => {
-      const key = `${item.name.toLowerCase()}-${item.description.toLowerCase()}`;
-      return !existingSet.has(key);
-    });
+    // await Promise.all([
+    //   this.saveMenuToFile(result.restaurant.name, result),
+    //   this.saveFoodItemsToDatabase(restaurantFromDatabase.id, newFoodItems),
+    // ]);
 
-    await Promise.all([
-      this.saveMenuToFile(result.restaurant.name, result),
-      this.saveFoodItemsToDatabase(restaurantFromDatabase.id, newFoodItems),
-    ]);
-
-    this.logger.log(`✅ Menu saved for branchId=${branchId}`);
-    return result;
+    // this.logger.log(`✅ Menu saved for branchId=${branchId}`);
+    // return result;
   }
 
   private async saveFoodItemsToDatabase(restaurantId: number, foodItems: any) {
-    const foodItemsToSave: CreateFoodItemDto[] = foodItems.map((item: any) => ({
-      name: item.name,
-      description: item.description,
-      ingredients: item.ingredients,
-      price: item.price,
-      rating: item.rating,
-      restaurantId,
-    }));
+    const foodItemsToSave: CreateFoodItemDto[] = foodItems.map((item: any) => {
+      // Extract category from originalSection (excluding "Picks for you 🔥")
+      let category: string | undefined = undefined;
+      if (
+        item.originalSection &&
+        item.originalSection !== 'Picks for you 🔥' &&
+        item.originalSection.trim() !== ''
+      ) {
+        category = item.originalSection.trim();
+      }
+
+      // Extract tags from name, description, and ingredients
+      const tags = this.ingredientExtractionService.extractTags(
+        item.name || '',
+        item.description || '',
+        item.ingredients || [],
+      );
+
+      return {
+        name: item.name,
+        description: item.description,
+        ingredients: item.ingredients,
+        price: item.price,
+        rating: item.rating,
+        restaurantId,
+        category,
+        tags: tags.length > 0 ? tags : undefined,
+      };
+    });
     await this.foodItemsRepository.createFoodItems(foodItemsToSave);
   }
 
