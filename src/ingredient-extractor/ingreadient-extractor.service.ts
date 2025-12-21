@@ -12,6 +12,57 @@ export interface ScoredIngredient {
 export class IngredientExtractorService {
   private readonly logger = new Logger(IngredientExtractorService.name);
 
+  // ========================================================================
+  // INGREDIENT CATEGORIZATION LISTS
+  // ========================================================================
+
+  // Common side dishes (low score unless they're the main dish)
+  private readonly COMMON_SIDES = [
+    'rice',
+    'bread',
+    'salad',
+    'fries',  // Fixed: removed duplicate
+    'chips',
+    'potato',
+    'potatoes',
+  ];
+
+  // Common condiments/sauces (very low score)
+  private readonly CONDIMENTS = [
+    'mayo',
+    'mayonnaise',
+    'mustard',
+    'ketchup',
+    'ranch',
+    'bbq sauce',
+    'hot sauce',
+    'salsa',
+    'sauce',
+    'dressing',
+    'sesame', // sesame paste is usually a side
+  ];
+
+  // Proteins (usually main ingredients)
+  private readonly PROTEINS = [
+    'chicken',
+    'beef',
+    'pork',
+    'turkey',
+    'salmon',
+    'tuna',
+    'shrimp',
+    'bacon',
+    'ham',
+    'sausage',
+    'kofta',
+    'tofu',
+    'lamb',
+    'duck',
+    'fish',
+    'egg',
+    'eggs',
+  ];
+
   // Common ingredients database
   private readonly ingredients = [
     // Proteins
@@ -225,54 +276,6 @@ export class IngredientExtractorService {
     const nameLower = name.toLowerCase();
     const descLower = description.toLowerCase();
 
-    // Common side dishes (low score unless they're the main dish)
-    const commonSides = [
-      'rice',
-      'bread',
-      'salad',
-      'fries',
-      'chips',
-      'fries',
-      'potato',
-      'potatoes',
-    ];
-
-    // Common condiments/sauces (very low score)
-    const condiments = [
-      'mayo',
-      'mayonnaise',
-      'mustard',
-      'ketchup',
-      'ranch',
-      'bbq sauce',
-      'hot sauce',
-      'salsa',
-      'sauce',
-      'dressing',
-      'sesame', // sesame paste is usually a side
-    ];
-
-    // Proteins (usually main ingredients)
-    const proteins = [
-      'chicken',
-      'beef',
-      'pork',
-      'turkey',
-      'salmon',
-      'tuna',
-      'shrimp',
-      'bacon',
-      'ham',
-      'sausage',
-      'kofta',
-      'tofu',
-      'lamb',
-      'duck',
-      'fish',
-      'egg',
-      'eggs',
-    ];
-
     for (const ingredient of uniqueIngredients) {
       const ingLower = ingredient.toLowerCase();
       let score = 0.5; // Default score
@@ -375,7 +378,7 @@ export class IngredientExtractorService {
         // Main Course: Proteins are main, sides are secondary
         if (catLower.includes('main') || catLower.includes('entree')) {
           if (
-            proteins.some((p) => ingLower.includes(p) || p.includes(ingLower))
+            this.PROTEINS.some((p) => ingLower.includes(p) || p.includes(ingLower))
           ) {
             if (!reasoning.includes('First word in dish name')) {
               score = Math.max(score, 0.8);
@@ -384,7 +387,7 @@ export class IngredientExtractorService {
             }
           }
           if (
-            commonSides.some(
+            this.COMMON_SIDES.some(
               (s) => ingLower.includes(s) || s.includes(ingLower),
             )
           ) {
@@ -412,7 +415,7 @@ export class IngredientExtractorService {
             role = 'main';
             reasoning.push('Main ingredient in salad');
           } else if (
-            condiments.some((c) => ingLower.includes(c) || c.includes(ingLower))
+            this.CONDIMENTS.some((c) => ingLower.includes(c) || c.includes(ingLower))
           ) {
             score = Math.min(score, 0.3);
             role = 'accessory';
@@ -445,7 +448,7 @@ export class IngredientExtractorService {
       // 5. Common sides default (unless already determined to be main)
       if (
         score === 0.5 &&
-        commonSides.some((s) => ingLower.includes(s) || s.includes(ingLower))
+        this.COMMON_SIDES.some((s) => ingLower.includes(s) || s.includes(ingLower))
       ) {
         score = 0.2;
         role = 'accessory';
@@ -455,7 +458,7 @@ export class IngredientExtractorService {
       // 6. Condiments default
       if (
         score === 0.5 &&
-        condiments.some((c) => ingLower.includes(c) || c.includes(ingLower))
+        this.CONDIMENTS.some((c) => ingLower.includes(c) || c.includes(ingLower))
       ) {
         score = 0.1;
         role = 'accessory';

@@ -15,7 +15,7 @@ import { exec } from 'child_process';
 import { promisify } from 'util';
 import * as path from 'path';
 import * as fs from 'fs';
-import { Prisma } from '../../generated/prisma/client';
+import { Prisma } from '@generated/prisma/client';
 
 const execAsync = promisify(exec);
 
@@ -59,11 +59,61 @@ interface UserEvent {
 export class RestaurantRecommendationsService {
   private readonly mlModelPath = path.join(process.cwd(), 'ml', 'model.pkl');
 
+  // ML Prediction Cache (In-memory, later: move to Redis)
+  private mlPredictionCache = new Map<string, {
+    score: number;
+    timestamp: Date;
+  }>();
+
+  private readonly CACHE_TTL_HOURS = 24; // Cache predictions for 24 hours
+
   constructor(
     private readonly repository: RestaurantRecommendationsRepository,
     private readonly ingredientExtractor: IngredientExtractorService,
   ) {}
 
+  // ========================================================================
+  // CONFIGURATION CONSTANTS
+  // ========================================================================
+
+  /**
+   * Scoring weights for final recommendation score
+   * Final Score = (Dietary × 0.1) + (Interaction × 0.6) + (Collaborative × 0.3)
+   */
+  private readonly SCORING_WEIGHTS = {
+    DIETARY: 0.1, // Safety net for dietary restrictions
+    INTERACTION: 0.6, // User behavior (most important)
+    COLLABORATIVE: 0.3, // ML predictions
+  } as const;
+
+  /**
+   * Interaction score sub-component weights
+   * Interaction Score = (Ingredient × 0.6) + (Tag × 0.4)
+   */
+  private readonly INTERACTION_WEIGHTS = {
+    INGREDIENT: 0.6, // Ingredient importance matching
+    TAG: 0.4, // Tag-based matching
+  } as const;
+
+  /**
+   * Temporal weighting settings
+   */
+  private readonly TEMPORAL_CONFIG = {
+    RECENCY_WINDOW_DAYS: 30, // Recent interactions window
+    RECENT_WEIGHT_MULTIPLIER: 2.0, // Weight multiplier for recent items
+  } as const;
+
+  /**
+   * Default scores for edge cases
+   */
+  private readonly DEFAULT_SCORES = {
+    NO_DATA: 5.0, // When no user history available
+    ML_FALLBACK: 5.0, // When ML prediction fails
+  } as const;
+
+  // ========================================================================
+  // PUBLIC API
+  // ======================================================================== */
   /**
    * Get recommendations for a restaurant
    */
@@ -94,16 +144,16 @@ export class RestaurantRecommendationsService {
       throw new NotFoundException(`User with ID ${userId} not found`);
     }
 
+    // OPTIMIZATION: Batch ML predictions (single Python call for all items)
+    const mlScores = await this.batchCollaborativeScores(userId, foodItems);
+
     // Score all food items
     const scoredItems = await Promise.all(
       foodItems.map(async (item) => {
         const dietaryScore = this.calculateDietaryPreferenceScore(item, user);
         const interactionBreakdown =
           await this.calculateInteractionScoreWithBreakdown(item, userId);
-        const collaborativeScore = await this.calculateCollaborativeScore(
-          item,
-          userId,
-        );
+        const collaborativeScore = mlScores.get(item.id) || this.DEFAULT_SCORES.ML_FALLBACK; // Use batched score
 
         const scoreBreakdown: ScoreBreakdownDto = {
           dietaryPreferenceScore: dietaryScore,
@@ -316,7 +366,9 @@ export class RestaurantRecommendationsService {
     const tagResult = this.calculateTagMatchScore(foodItem, events);
 
     // Combine scores (60% ingredients, 40% tags)
-    const totalScore = ingredientResult.score * 0.6 + tagResult.score * 0.4;
+    const totalScore =
+      ingredientResult.score * this.INTERACTION_WEIGHTS.INGREDIENT +
+      tagResult.score * this.INTERACTION_WEIGHTS.TAG;
 
     return {
       ingredientScore: ingredientResult.score,
@@ -353,12 +405,14 @@ export class RestaurantRecommendationsService {
       { weight: number; importanceScore: number }
     >(); // ingredient -> {weight, importanceScore}
     const thirtyDaysAgo = new Date();
-    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - this.TEMPORAL_CONFIG.RECENCY_WINDOW_DAYS);
 
     for (const event of events) {
       const eventDate = new Date(event.createdAt);
       const isRecent = eventDate >= thirtyDaysAgo;
-      const timeWeight = isRecent ? 2.0 : 1.0;
+      const timeWeight = isRecent
+        ? this.TEMPORAL_CONFIG.RECENT_WEIGHT_MULTIPLIER
+        : 1.0;
 
       if (event.foodItem?.ingredients) {
         // Get scored ingredients for past event
@@ -392,7 +446,7 @@ export class RestaurantRecommendationsService {
 
     if (preferredIngredients.size === 0) {
       return {
-        score: 5.0,
+        score: this.DEFAULT_SCORES.NO_DATA,
         matches: [],
       };
     }
@@ -427,7 +481,9 @@ export class RestaurantRecommendationsService {
     }
 
     // Calculate score: (matching_weight / total_weight) * 10
-    const score = totalWeight > 0 ? (matchingWeight / totalWeight) * 10 : 5.0;
+    const score = totalWeight > 0
+      ? (matchingWeight / totalWeight) * 10
+      : this.DEFAULT_SCORES.NO_DATA;
 
     return {
       score: Math.max(0.0, Math.min(10.0, score)),
@@ -450,7 +506,7 @@ export class RestaurantRecommendationsService {
 
     if (itemTags.length === 0) {
       return {
-        score: 5.0,
+        score: this.DEFAULT_SCORES.NO_DATA,
         matches: [],
         combinationBonus: 0,
       };
@@ -460,7 +516,7 @@ export class RestaurantRecommendationsService {
     const preferredTags = new Map<string, number>(); // tag -> weighted count
     const preferredTagCombinations = new Map<string, number>(); // "tag1,tag2" -> count
     const thirtyDaysAgo = new Date();
-    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - this.TEMPORAL_CONFIG.RECENCY_WINDOW_DAYS);
 
     // Define tag importance weights
     const tagWeights: Record<string, number> = {
@@ -493,7 +549,9 @@ export class RestaurantRecommendationsService {
     for (const event of events) {
       const eventDate = new Date(event.createdAt);
       const isRecent = eventDate >= thirtyDaysAgo;
-      const timeWeight = isRecent ? 2.0 : 1.0;
+      const timeWeight = isRecent
+        ? this.TEMPORAL_CONFIG.RECENT_WEIGHT_MULTIPLIER
+        : 1.0;
 
       if (event.foodItem?.tags && Array.isArray(event.foodItem.tags)) {
         const eventTags = event.foodItem.tags.map((t) =>
@@ -523,7 +581,7 @@ export class RestaurantRecommendationsService {
 
     if (preferredTags.size === 0) {
       return {
-        score: 5.0,
+        score: this.DEFAULT_SCORES.NO_DATA,
         matches: [],
         combinationBonus: 0,
       };
@@ -596,9 +654,234 @@ export class RestaurantRecommendationsService {
     };
   }
 
+  // ========================================================================
+  // ML PREDICTION CACHING
+  // ========================================================================
+
+  /**
+   * Generate cache key for ML predictions
+   */
+  private getCacheKey(userId: number, itemId: number): string {
+    return `ml:${userId}:${itemId}`;
+  }
+
+  /**
+   * Get cached ML prediction if available and not expired
+   */
+  private getCachedPrediction(userId: number, itemId: number): number | null {
+    const key = this.getCacheKey(userId, itemId);
+    const cached = this.mlPredictionCache.get(key);
+
+    if (!cached) return null;
+
+    // Check TTL
+    const hoursSince = (Date.now() - cached.timestamp.getTime()) / 3600000;
+    if (hoursSince > this.CACHE_TTL_HOURS) {
+      this.mlPredictionCache.delete(key);
+      return null;
+    }
+
+    return cached.score;
+  }
+
+  /**
+   * Cache ML prediction with current timestamp
+   */
+  private setCachedPrediction(userId: number, itemId: number, score: number): void {
+    const key = this.getCacheKey(userId, itemId);
+    this.mlPredictionCache.set(key, {
+      score,
+      timestamp: new Date(),
+    });
+  }
+
+  /**
+   * Check cache for batch of items, return Map of cached scores
+   */
+  private getBatchCachedPredictions(
+    userId: number,
+    itemIds: number[]
+  ): Map<number, number> {
+    const cached = new Map<number, number>();
+    for (const itemId of itemIds) {
+      const score = this.getCachedPrediction(userId, itemId);
+      if (score !== null) {
+        cached.set(itemId, score);
+      }
+    }
+    return cached;
+  }
+
+  /**
+   * Cache batch of predictions
+   */
+  private setBatchCachedPredictions(
+    userId: number,
+    predictions: Map<number, number>
+  ): void {
+    for (const [itemId, score] of Array.from(predictions.entries())) {
+      this.setCachedPrediction(userId, itemId, score);
+    }
+  }
+
+  // ========================================================================
+  // SCORING METHODS
+  // ========================================================================
+
+  /**
+   * Batch calculate collaborative filtering scores for multiple items (OPTIMIZED)
+   * Calls Python ONCE for all items instead of spawning process per item
+   */
+  private async batchCollaborativeScores(
+    userId: number,
+    foodItems: FoodItem[],
+  ): Promise<Map<number, number>> {
+    const scores = new Map<number, number>();
+
+    // OPTIMIZATION: Check cache first
+    const itemIds = foodItems.map(item => item.id);
+    const cachedScores = this.getBatchCachedPredictions(userId, itemIds);
+    
+    // Separate cached from uncached items
+    const uncachedItems = foodItems.filter(item => !cachedScores.has(item.id));
+    
+    // If all items are cached, return immediately
+    if (uncachedItems.length === 0) {
+      return cachedScores;
+    }
+
+    // Check if model exists
+    if (!fs.existsSync(this.mlModelPath)) {
+      // No model available, use content-based fallback for uncached items
+      for (const item of uncachedItems) {
+        const fallbackScore = await this.calculateContentBasedFallback(item, userId);
+        scores.set(item.id, fallbackScore);
+      }
+      // Combine with cached scores
+      return new Map([...Array.from(cachedScores.entries()), ...Array.from(scores.entries())]);
+    }
+
+    try {
+      // Prepare UNCACHED food items data for ML prediction (BATCH)
+      const foodItemsJson = JSON.stringify(
+        uncachedItems.map(item => {
+          const rating =
+            typeof item.rating === 'object' && 'toNumber' in item.rating
+              ? item.rating.toNumber()
+              : Number(item.rating);
+
+          return {
+            id: item.id,
+            name: item.name,
+            description: item.description,
+            ingredients: item.ingredients,
+            rating: rating,
+          };
+        })
+      );
+
+      // Get user features (dietary preferences, preferred ingredients)
+      const user = await this.repository.getUserById(userId);
+      const userEventsData =
+        await this.repository.getUserEventsWithFoodItems(userId);
+      const userEvents = userEventsData as unknown as UserEvent[];
+
+      // Extract preferred ingredients from events
+      const preferredIngredients = new Set<string>();
+      for (const event of userEvents) {
+        if (event.foodItem?.ingredients) {
+          for (const ingredient of event.foodItem.ingredients) {
+            preferredIngredients.add(String(ingredient).toLowerCase());
+          }
+        }
+      }
+
+      const userFeatures = {
+        dietary_preferences: user?.dietaryPreferences || [],
+        preferred_ingredients: Array.from(preferredIngredients),
+      };
+
+      const userFeaturesJson = JSON.stringify(userFeatures);
+
+      // Call Python prediction script (SINGLE CALL FOR ALL ITEMS)
+      const pythonScriptPath = path.join(process.cwd(), 'ml', 'predict.py');
+
+      // Escape JSON strings for shell command
+      const escapedFoodItemsJson = foodItemsJson.replace(/'/g, "'\\\\'");
+      const escapedUserFeaturesJson = userFeaturesJson.replace(/'/g, "'\\\\'");
+
+      const { stdout, stderr } = await execAsync(
+        `python3 "${pythonScriptPath}" ${userId} '${escapedFoodItemsJson}' '${escapedUserFeaturesJson}'`,
+      );
+
+      // Check for expected errors and suppress warnings
+      if (stderr) {
+        const isExpectedError =
+          stderr.includes('ModuleNotFoundError') ||
+          stderr.includes('No module named') ||
+          stderr.includes('DEBUG:');
+
+        if (!isExpectedError) {
+          console.warn('ML batch prediction warning:', stderr);
+        }
+      }
+
+      // Parse results (array of predictions)
+      const results = JSON.parse(stdout);
+      if (results && Array.isArray(results)) {
+        for (const result of results) {
+          const prediction = result.predicted_score;
+          const itemId = result.id || result.item_id;
+          if (itemId !== undefined && prediction !== undefined) {
+            const normalizedScore = Math.max(0.0, Math.min(10.0, Number(prediction)));
+            scores.set(Number(itemId), normalizedScore);
+          }
+        }
+      }
+
+      // CACHE: Store predictions for future requests
+      this.setBatchCachedPredictions(userId, scores);
+
+      // Fill in missing scores with fallback and combine with cached
+      for (const item of uncachedItems) {
+        if (!scores.has(item.id)) {
+          const fallbackScore = await this.calculateContentBasedFallback(item, userId);
+          scores.set(item.id, fallbackScore);
+        }
+      }
+
+      // Combine cached scores with newly computed scores
+      return new Map([...Array.from(cachedScores.entries()), ...Array.from(scores.entries())]);
+    } catch (error: any) {
+      // Check if it's an expected error (missing Python dependencies)
+      const errorMessage = error?.message || String(error);
+      const isExpectedError =
+        errorMessage.includes('ModuleNotFoundError') ||
+        errorMessage.includes('No module named') ||
+        errorMessage.includes('lightfm');
+
+      // Only log unexpected errors
+      if (!isExpectedError) {
+        console.warn(
+          `ML batch prediction failed for user ${userId}:`,
+          error,
+        );
+      }
+
+      // If ML prediction fails, fallback to content-based scoring for uncached items
+      for (const item of uncachedItems) {
+        const fallbackScore = await this.calculateContentBasedFallback(item, userId);
+        scores.set(item.id, fallbackScore);
+      }
+      // Combine with cached scores
+      return new Map([...Array.from(cachedScores.entries()), ...Array.from(scores.entries())]);
+    }
+  }
+
   /**
    * Factor 3: Calculate collaborative filtering score using LightFM (0-10)
    * Falls back to content-based scoring (dietary + interaction) if ML unavailable
+   * NOTE: This is kept for backwards compatibility but prefer batchCollaborativeScores
    */
   async calculateCollaborativeScore(
     foodItem: FoodItem,
@@ -737,16 +1020,14 @@ export class RestaurantRecommendationsService {
   }
 
   /**
-   * Combine all three scores with weights
-   * Weights: 60% interaction (user's past behavior), 30% collaborative (ML), 10% dietary preferences
-   * This prioritizes actual user interactions - if a user really likes an item,
-   * it should score high even if it doesn't perfectly match dietary preferences
+   * Combine all scoring factors into final score (0-10)
+   * Weight distribution: 10% Dietary + 60% Interaction + 30% Collaborative
    */
   combineScores(breakdown: ScoreBreakdownDto): number {
     const finalScore =
-      breakdown.dietaryPreferenceScore * 0.1 + // 10% - dietary preferences
-      breakdown.interactionScore * 0.6 + // 60% - user interaction history (most important)
-      breakdown.collaborativeScore * 0.3; // 30% - collaborative filtering (ML)
+      breakdown.dietaryPreferenceScore * this.SCORING_WEIGHTS.DIETARY +
+      breakdown.interactionScore * this.SCORING_WEIGHTS.INTERACTION +
+      breakdown.collaborativeScore * this.SCORING_WEIGHTS.COLLABORATIVE;
 
     return Math.max(0.0, Math.min(10.0, finalScore));
   }

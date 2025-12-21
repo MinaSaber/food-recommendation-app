@@ -1,4 +1,5 @@
 // Mock PrismaService before any imports
+
 jest.mock('../prsima/prisma.service', () => ({
   PrismaService: jest.fn().mockImplementation(() => ({
     $connect: jest.fn(),
@@ -377,4 +378,6 @@ describe('RestaurantRecommendationsService', () => {
       expect(result).toBeLessThanOrEqual(10);
     });
   });
+
+
 });
